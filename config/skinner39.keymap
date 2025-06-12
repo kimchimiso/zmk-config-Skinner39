@@ -36,10 +36,10 @@
 
         mouse_layer {
             bindings = <
-  &kp ESCAPE  &kp LG(LEFT)  &kp UP_ARROW  &kp LG(RIGHT)  &trans                    &trans    &trans     &msc SCRL_UP    &trans     &trans
-  &kp TAB     &kp LEFT      &kp DOWN      &kp RIGHT      &trans                    &trans    &mkp LCLK  &mkp MCLK       &mkp RCLK  &trans
-  &trans      &trans        &trans        &trans         &trans                    &trans    &trans     &msc SCRL_DOWN  &trans     &trans
-  &trans      &trans        &trans        &trans         &trans  &trans  &mkp MB4  &mkp MB5                                        &trans
+  &kp ESCAPE  &kp LG(LEFT)      &kp UP_ARROW  &kp LG(RIGHT)      &trans                    &trans    &trans     &msc SCRL_UP    &trans     &trans
+  &kp TAB     &kp LEFT          &kp DOWN      &kp RIGHT          &trans                    &trans    &mkp LCLK  &mkp MCLK       &mkp RCLK  &trans
+  &trans      &kp LG(LS(LEFT))  &trans        &kp LG(LS(RIGHT))  &trans                    &trans    &trans     &msc SCRL_DOWN  &trans     &trans
+  &trans      &trans            &trans        &trans             &trans  &trans  &mkp MB4  &mkp MB5                                        &trans
             >;
         };
     };
