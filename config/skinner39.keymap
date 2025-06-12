@@ -18,10 +18,10 @@
 
         symbol_layer {
             bindings = <
-  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                  &kp AMPS        &kp APOSTROPHE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT
-  &trans           &trans             &trans    &trans      &trans                       &kp MINUS       &kp EQUAL       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT
-  &trans           &trans             &trans    &trans      &trans                       &kp UNDERSCORE  &kp PLUS        &trans                &kp SLASH              &kp UNDERSCORE
-  &trans           &trans             &trans    &trans      &trans       &trans  &trans  &trans                                                                       &trans
+  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                  &kp AMPS   &kp APOSTROPHE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT
+  &trans           &trans             &trans    &trans      &trans                       &kp MINUS  &kp EQUAL       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT
+  &trans           &trans             &trans    &trans      &trans                       &trans     &kp PLUS        &trans                &kp SLASH              &kp UNDERSCORE
+  &trans           &trans             &trans    &trans      &trans       &trans  &trans  &trans                                                                  &trans
             >;
         };
 
@@ -29,7 +29,7 @@
             bindings = <
   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5
   &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0                        &kp F6  &kp F7  &kp F8  &kp F9   &kp F10
-  &trans        &trans        &trans        &trans        &trans                        &trans  &trans  &trans  &kp F11  &kp F12
+  &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)     &trans                        &trans  &trans  &trans  &kp F11  &kp F12
   &bt BT_CLR    &trans        &trans        &trans        &trans        &trans  &trans  &trans                           &trans
             >;
         };
