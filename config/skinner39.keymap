@@ -45,10 +45,10 @@
 
         number_and_function_layer {
             bindings = <
-  &trans        &trans        &trans        &trans        &trans                                 &kp F6         &kp F7  &kp F10  &kp F12  &trans
-  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                           &kp NUMBER_6   &kp N7  &kp N8   &kp N9   &kp N0
-  &trans        &trans        &trans        &trans        &trans                                 &trans         &trans  &trans   &trans   &trans
-  &trans        &trans        &trans        &kp KP_PLUS   &kp SPACE     &kp KP_MINUS  &kp ENTER  &kp BACKSPACE                            &trans
+  &trans          &trans        &trans        &trans        &trans                                 &kp F6         &kp F7  &kp F10  &kp F12  &trans
+  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                           &kp NUMBER_6   &kp N7  &kp N8   &kp N9   &kp N0
+  &trans          &trans        &trans        &trans        &trans                                 &trans         &trans  &trans   &trans   &trans
+  &kp LEFT_SHIFT  &trans        &trans        &kp KP_PLUS   &kp SPACE     &kp KP_MINUS  &kp ENTER  &kp BACKSPACE                            &kp RIGHT_SHIFT
             >;
         };
     };
