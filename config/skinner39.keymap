@@ -36,7 +36,7 @@
 
         symbol_right_1 {
             bindings = <
-  &kp ESCAPE  &trans  &trans  &trans  &trans                  &kp AMPS  &kp APOS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+  &kp ESCAPE  &trans  &trans  &trans  &trans                  &kp AMPS  &kp APOS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_EQUAL
   &kp TAB     &trans  &trans  &trans  &trans                  &trans    &trans    &trans                &trans                 &trans
   &trans      &trans  &trans  &trans  &trans                  &trans    &trans    &trans                &trans                 &trans
   &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                           &kp UNDERSCORE
