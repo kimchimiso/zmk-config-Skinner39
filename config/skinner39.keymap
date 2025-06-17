@@ -9,10 +9,10 @@
 
         default_layer {
             bindings = <
-  &kp Q    &kp W         &kp E         &lt 1 R            &kp T                                     &kp Y              &lt 2 U  &kp I      &kp O       &kp P
-  &lt 3 A  &lt 4 S       &lt 5 D       &lt 6 F            &kp G                                     &kp H              &lt 7 J  &kp K      &kp L       &lt 8 SEMICOLON
-  &lt 9 Z  &kp X         &kp C         &kp V              &kp B                                     &kp N              &kp M    &kp COMMA  &kp PERIOD  &lt 10 KP_DIVIDE
-  &trans   &kp LEFT_ALT  &kp LEFT_WIN  &lt 11 LANGUAGE_2  &lt 12 SPACE  &lt 12 SPACE  &lt 13 SPACE  &lt 14 LANGUAGE_1                                  &trans
+  &kp Q     &kp W         &kp E         &lt 1 R            &kp T                                     &kp Y              &lt 2 U  &kp I      &kp O       &kp P
+  &lt 3 A   &lt 4 S       &lt 6 D       &lt 7 F            &kp G                                     &kp H              &lt 8 J  &kp K      &kp L       &lt 9 SEMICOLON
+  &lt 10 Z  &kp X         &kp C         &kp V              &kp B                                     &kp N              &kp M    &kp COMMA  &kp PERIOD  &lt 11 KP_DIVIDE
+  &trans    &kp LEFT_ALT  &kp LEFT_WIN  &lt 12 LANGUAGE_2  &lt 13 SPACE  &lt 13 SPACE  &lt 14 SPACE  &lt 15 LANGUAGE_1                                  &trans
             >;
         };
 
@@ -49,6 +49,15 @@
   &kp TAB     &trans  &trans  &trans  &trans                  &kp KP_MINUS  &trans  &trans  &kp COLON  &kp RIGHT_BRACKET
   &trans      &trans  &trans  &trans  &trans                  &kp INT_YEN   &trans  &trans  &trans     &trans
   &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans                                   &kp UNDER
+            >;
+        };
+
+        scroll {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
         };
 
@@ -118,7 +127,7 @@
         mouse_right {
             bindings = <
   &kp ESCAPE  &trans  &trans  &trans  &trans                    &trans           &kp PAGE_UP    &msc SCRL_DOWN  &trans          &trans
-  &kp TAB     &trans  &trans  &trans  &trans                    &trans           &mkp LCLK      &mkp MCLK       &mkp RCLK       &trans
+  &kp TAB     &trans  &trans  &sl 5   &trans                    &trans           &mkp LCLK      &mkp MCLK       &mkp RCLK       &trans
   &trans      &trans  &trans  &trans  &trans                    &msc SCRL_RIGHT  &kp PAGE_DOWN  &msc SCRL_UP    &msc SCRL_LEFT  &trans
   &trans      &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB5                                                        &trans
             >;
