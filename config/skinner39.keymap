@@ -109,7 +109,7 @@
         mouse_right {
             bindings = <
   &kp ESCAPE  &trans  &trans  &trans  &trans                    &trans           &kp PAGE_UP    &msc SCRL_DOWN  &trans          &trans
-  &kp TAB     &trans  &trans  &mo 6   &trans                    &trans           &mkp LCLK      &mkp MCLK       &mkp RCLK       &trans
+  &kp TAB     &trans  &trans  &mo 5   &trans                    &trans           &mkp LCLK      &mkp MCLK       &mkp RCLK       &trans
   &trans      &trans  &trans  &trans  &trans                    &msc SCRL_RIGHT  &kp PAGE_DOWN  &msc SCRL_UP    &msc SCRL_LEFT  &trans
   &trans      &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB5                                                        &trans
             >;
