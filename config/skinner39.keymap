@@ -18,10 +18,10 @@
 
         function_right {
             bindings = <
-  &kp ESCAPE      &trans  &trans  &trans  &trans                  &kp F6   &kp F7   &kp F8   &kp F9  &kp F10
-  &kp TAB         &trans  &trans  &trans  &trans                  &kp F11  &kp F11  &kp F12  &trans  &trans
-  &kp LEFT_SHIFT  &trans  &trans  &trans  &trans                  &trans   &trans   &trans   &trans  &trans
-  &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans                             &trans
+  &kp ESCAPE      &trans        &trans        &trans  &trans                  &kp F6   &kp F7   &kp F8   &kp F9  &kp F10
+  &kp TAB         &trans        &trans        &trans  &trans                  &kp F11  &kp F11  &kp F12  &trans  &trans
+  &kp LEFT_SHIFT  &trans        &trans        &trans  &trans                  &trans   &trans   &trans   &trans  &trans
+  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans                             &trans
             >;
         };
 
@@ -36,19 +36,19 @@
 
         symbol_right_2 {
             bindings = <
-  &kp ESCAPE      &trans  &trans  &trans  &trans                  &trans        &trans  &trans  &kp AT     &kp LEFT_BRACKET
-  &kp TAB         &trans  &trans  &trans  &trans                  &kp KP_MINUS  &trans  &trans  &kp COLON  &kp RIGHT_BRACKET
-  &kp LEFT_SHIFT  &trans  &trans  &trans  &trans                  &kp INT_YEN   &trans  &trans  &trans     &trans
-  &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                   &kp UNDER
+  &kp ESCAPE      &trans        &trans        &trans  &trans                  &trans        &trans  &trans  &kp AT     &kp LEFT_BRACKET
+  &kp TAB         &trans        &trans        &trans  &trans                  &kp KP_MINUS  &trans  &trans  &kp COLON  &kp RIGHT_BRACKET
+  &kp LEFT_SHIFT  &trans        &trans        &trans  &trans                  &kp INT_YEN   &trans  &trans  &trans     &trans
+  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans                                   &kp UNDER
             >;
         };
 
         symbol_right_3 {
             bindings = <
-  &kp ESCAPE      &trans  &trans  &trans  &trans                  &trans        &trans  &trans    &kp GRAVE        &kp LEFT_BRACE
-  &kp TAB         &trans  &trans  &trans  &trans                  &kp KP_EQUAL  &trans  &kp PLUS  &kp KP_ASTERISK  &kp RIGHT_BRACE
-  &kp LEFT_SHIFT  &trans  &trans  &trans  &trans                  &kp PIPE      &trans  &trans    &trans           &trans
-  &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                           &kp UNDER
+  &kp ESCAPE      &trans        &trans        &trans  &trans                  &trans        &trans  &trans    &kp GRAVE        &kp LEFT_BRACE
+  &kp TAB         &trans        &trans        &trans  &trans                  &kp KP_EQUAL  &trans  &kp PLUS  &kp KP_ASTERISK  &kp RIGHT_BRACE
+  &kp LEFT_SHIFT  &trans        &trans        &trans  &trans                  &kp PIPE      &trans  &trans    &trans           &trans
+  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans                                           &kp UNDER
             >;
         };
 
@@ -63,10 +63,10 @@
 
         number_right {
             bindings = <
-  &kp ESCAPE      &trans  &trans  &trans  &trans                  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
-  &kp TAB         &trans  &trans  &trans  &trans                  &trans           &trans           &trans           &trans           &trans
-  &kp LEFT_SHIFT  &trans  &trans  &trans  &trans                  &trans           &trans           &trans           &trans           &trans
-  &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                              &trans
+  &kp ESCAPE      &trans        &trans        &trans  &trans                  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
+  &kp TAB         &trans        &trans        &trans  &trans                  &trans           &trans           &trans           &trans           &trans
+  &kp LEFT_SHIFT  &trans        &trans        &trans  &trans                  &trans           &trans           &trans           &trans           &trans
+  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans                                                              &trans
             >;
         };
 
@@ -81,10 +81,10 @@
 
         symbol_right_1 {
             bindings = <
-  &kp ESCAPE      &trans  &trans  &trans  &trans                  &kp AMPS  &kp APOS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_EQUAL
-  &kp TAB         &trans  &trans  &trans  &trans                  &trans    &trans    &trans                &trans                 &trans
-  &kp LEFT_SHIFT  &trans  &trans  &trans  &trans                  &trans    &trans    &trans                &trans                 &trans
-  &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                           &kp UNDERSCORE
+  &kp ESCAPE      &trans        &trans        &trans  &trans                  &kp AMPS  &kp APOS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_EQUAL
+  &kp TAB         &trans        &trans        &trans  &trans                  &trans    &trans    &trans                &trans                 &trans
+  &kp LEFT_SHIFT  &trans        &trans        &trans  &trans                  &trans    &trans    &trans                &trans                 &trans
+  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_WIN  &trans  &trans  &trans  &trans  &trans                                                           &kp UNDERSCORE
             >;
         };
 
@@ -99,19 +99,19 @@
 
         empty_right {
             bindings = <
-  &kp ESCAPE      &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-  &kp TAB         &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-  &kp LEFT_SHIFT  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-  &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
+  &kp ESCAPE      &trans        &trans        &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+  &kp TAB         &trans        &trans        &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+  &kp LEFT_SHIFT  &trans        &trans        &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
         };
 
         mouse_right {
             bindings = <
-  &kp ESCAPE      &trans  &trans  &trans  &trans                    &trans           &kp PAGE_UP    &msc SCRL_DOWN  &trans          &trans
-  &kp TAB         &trans  &trans  &mo 5   &trans                    &trans           &mkp LCLK      &mkp MCLK       &mkp RCLK       &trans
-  &kp LEFT_SHIFT  &trans  &trans  &trans  &trans                    &msc SCRL_RIGHT  &kp PAGE_DOWN  &msc SCRL_UP    &msc SCRL_LEFT  &trans
-  &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB5                                                        &trans
+  &kp ESCAPE      &trans        &trans        &trans  &trans                    &trans           &kp PAGE_UP    &msc SCRL_DOWN  &trans          &trans
+  &kp TAB         &trans        &trans        &mo 5   &trans                    &trans           &mkp LCLK      &mkp MCLK       &mkp RCLK       &trans
+  &kp LEFT_SHIFT  &trans        &trans        &trans  &trans                    &msc SCRL_RIGHT  &kp PAGE_DOWN  &msc SCRL_UP    &msc SCRL_LEFT  &trans
+  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &trans  &trans  &trans  &mkp MB4  &mkp MB5                                                        &trans
             >;
         };
 
