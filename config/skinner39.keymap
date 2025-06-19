@@ -54,37 +54,37 @@
 
         layer_5_mouse_scroll {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                  &trans  &trans            &msc MOVE_Y(-20)  &trans           &trans
-  &trans  &trans  &trans  &trans  &trans                  &trans  &msc MOVE_Y(-20)  &msc MOVE_Y(20)   &msc MOVE_X(20)  &trans
-  &trans  &trans  &trans  &trans  &trans                  &trans  &trans            &trans            &trans           &trans
-  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                       &trans
+  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
         };
 
         layer_6_mouse_slow {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                    &trans    &trans     &trans     &trans     &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans    &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans    &trans     &trans     &trans     &trans
-  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB5                                   &trans
+  &trans  &trans  &trans  &trans  &trans                    &trans           &trans     &msc MOVE_Y(-5)  &trans     &trans
+  &trans  &trans  &trans  &trans  &trans                    &msc MOVE_X(-5)  &mkp LCLK  &mkp MCLK        &mkp RCLK  &msc MOVE_X(5)
+  &trans  &trans  &trans  &trans  &trans                    &trans           &trans     &msc MOVE_Y(5)   &trans     &trans
+  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB5                                                &trans
             >;
         };
 
         mouse {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                    &trans    &trans     &trans     &trans     &trans
-  &mo 6   &trans  &trans  &mo 5   &trans                    &trans    &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
-  &trans  &trans  &trans  &trans  &trans                    &trans    &trans     &trans     &trans     &trans
-  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB5                                   &trans
+  &trans  &trans  &trans  &trans  &trans                    &trans            &trans     &msc MOVE_Y(-20)  &trans     &trans
+  &mo 6   &trans  &trans  &mo 5   &trans                    &msc MOVE_X(-20)  &mkp LCLK  &mkp MCLK         &mkp RCLK  &msc MOVE_X(20)
+  &trans  &trans  &trans  &trans  &trans                    &trans            &trans     &msc MOVE_Y(20)   &trans     &trans
+  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB5                                                  &trans
             >;
         };
 
         curor_right {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                  &kp HOME  &kp PAGE_UP    &kp UP_ARROW  &trans     &trans
-  &trans  &trans  &trans  &trans  &trans                  &trans    &kp LEFT       &kp DOWN      &kp RIGHT  &trans
-  &trans  &trans  &trans  &trans  &trans                  &kp END   &kp PAGE_DOWN  &trans        &trans     &kp K_APPLICATION
-  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                            &kp INSERT
+  &trans  &trans  &trans  &trans  &trans                  &kp HOME      &kp PAGE_UP    &kp UP_ARROW  &trans     &trans
+  &trans  &trans  &trans  &trans  &trans                  &kp LG(LEFT)  &kp LEFT       &kp DOWN      &kp RIGHT  &kp RG(RIGHT)
+  &trans  &trans  &trans  &trans  &trans                  &kp END       &kp PAGE_DOWN  &trans        &trans     &trans
+  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                &trans
             >;
         };
     };
