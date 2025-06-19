@@ -81,10 +81,10 @@
 
         curor_right {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                  &kp HOME      &kp PAGE_UP    &kp UP_ARROW  &trans     &trans
-  &trans  &trans  &trans  &trans  &trans                  &kp LG(LEFT)  &kp LEFT       &kp DOWN      &kp RIGHT  &kp RG(RIGHT)
-  &trans  &trans  &trans  &trans  &trans                  &kp END       &kp PAGE_DOWN  &trans        &trans     &trans
-  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                &trans
+  &trans  &trans  &trans  &trans  &trans                    &trans        &trans    &kp UP_ARROW  &trans     &trans
+  &trans  &trans  &trans  &trans  &trans                    &kp LA(LEFT)  &kp LEFT  &kp DOWN      &kp RIGHT  &kp RA(RIGHT)
+  &trans  &trans  &trans  &trans  &trans                    &kp RG(LEFT)  &trans    &trans        &trans     &kp RG(RIGHT)
+  &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp END                                          &trans
             >;
         };
     };
