@@ -73,7 +73,7 @@
         mouse {
             bindings = <
   &trans  &trans  &trans  &trans  &trans                    &trans           &trans     &msc MOVE_Y(-20)  &trans     &trans
-  &mo 6   &trans  &trans  &mo 5   &trans                    &msc MOVE_X(20)  &mkp LCLK  &mkp MCLK         &mkp RCLK  &msc MOVE_X(-20)
+  &trans  &trans  &trans  &mo 6   &trans                    &msc MOVE_X(20)  &mkp LCLK  &mkp MCLK         &mkp RCLK  &msc MOVE_X(-20)
   &trans  &trans  &trans  &trans  &trans                    &trans           &trans     &msc MOVE_Y(20)   &trans     &trans
   &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB5                                                 &trans
             >;
