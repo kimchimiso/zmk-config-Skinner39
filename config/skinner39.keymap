@@ -9,100 +9,82 @@
 
         default_layer {
             bindings = <
-  &kp Q             &kp W         &kp E         &lt 1 R            &kp T                                &kp Y              &lt 2 U  &kp I      &kp O       &kp P
-  &mt LEFT_SHIFT A  &lt 3 S       &lt 4 D       &lt 6 F            &kp G                                &kp H              &lt 6 J  &kp K      &kp L       &mt RIGHT_SHIFT SEMICOLON
-  &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V              &kp B                                &kp N              &kp M    &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH
-  &kp LEFT_SHIFT    &kp LEFT_ALT  &kp LEFT_WIN  &lt 10 LANGUAGE_2  &lt 9 SPACE  &lt 9 SPACE  &kp SPACE  &lt 10 LANGUAGE_1                                  &mt RIGHT_SHIFT UNDERSCORE
+  &kp Q             &kp W         &kp E         &lt 2 R           &kp T                                &kp Y             &lt 2 U  &kp I      &kp O       &kp P
+  &mt LEFT_SHIFT A  &lt 1 S       &kp D         &lt 3 F           &kp G                                &kp H             &lt 4 J  &kp K      &lt 1 L     &mt RIGHT_SHIFT SEMICOLON
+  &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V             &kp B                                &kp N             &kp M    &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH
+  &kp LEFT_SHIFT    &kp LEFT_ALT  &kp LEFT_WIN  &lt 8 LANGUAGE_2  &lt 8 SPACE  &lt 8 SPACE  &kp SPACE  &lt 8 LANGUAGE_1                                  &mt RIGHT_SHIFT UNDERSCORE
             >;
         };
 
-        function_right {
+        number {
             bindings = <
-  &kp ESCAPE      &trans        &trans        &trans  &trans                  &kp F6   &kp F7   &kp F8   &kp F9  &kp F10
-  &kp TAB         &trans        &trans        &trans  &trans                  &kp F11  &kp F11  &kp F12  &trans  &trans
-  &kp LEFT_SHIFT  &trans        &trans        &trans  &trans                  &trans   &trans   &trans   &trans  &trans
-  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans                             &trans
+  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                  &kp NUMBER_6  &kp N7     &kp N8     &kp N9            &kp N0
+  &trans        &trans        &trans        &trans        &trans                  &kp MINUS     &kp EQUAL  &kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+  &trans        &trans        &trans        &trans        &trans                  &kp INT_YEN   &trans     &trans     &kp SINGLE_QUOTE  &kp NON_US_BACKSLASH
+  &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans                                                &trans
             >;
         };
 
-        function_left {
+        function {
             bindings = <
-  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                      &trans  &trans  &trans  &trans  &kp BACKSPACE
-  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &kp ENTER
-  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &kp ENTER
-  &trans  &trans  &trans  &trans  &trans  &bt BT_CLR  &trans  &trans                          &trans
+  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                      &kp F6   &kp F7   &kp F8   &kp F9  &kp F10
+  &trans  &trans  &trans  &trans  &trans                      &kp F11  &kp F11  &kp F12  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans                      &trans   &trans   &trans   &trans  &trans
+  &trans  &trans  &trans  &trans  &trans  &bt BT_CLR  &trans  &trans                             &trans
             >;
         };
 
-        symbol_right_2 {
+        common_left {
             bindings = <
-  &kp ESCAPE      &trans        &trans        &trans  &trans                  &trans        &trans  &trans  &kp AT     &kp LEFT_BRACKET
-  &kp TAB         &trans        &trans        &trans  &trans                  &kp KP_MINUS  &trans  &trans  &kp COLON  &kp RIGHT_BRACKET
-  &kp LEFT_SHIFT  &trans        &trans        &trans  &trans                  &kp INT_YEN   &trans  &trans  &trans     &trans
-  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans                                   &kp UNDER
+  &kp ESCAPE  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+  &kp TAB     &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+  &trans      &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
         };
 
-        symbol_right_3 {
+        common_right {
             bindings = <
-  &kp ESCAPE      &trans        &trans        &trans  &trans                  &trans        &trans  &trans    &kp GRAVE        &kp LEFT_BRACE
-  &kp TAB         &trans        &trans        &trans  &trans                  &kp KP_EQUAL  &trans  &kp PLUS  &kp KP_ASTERISK  &kp RIGHT_BRACE
-  &kp LEFT_SHIFT  &trans        &trans        &trans  &trans                  &kp PIPE      &trans  &trans    &trans           &trans
-  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans                                           &kp UNDER
-            >;
-        };
-
-        scroll {
-            bindings = <
-  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &kp BACKSPACE
+  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &kp ENTER
   &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
         };
 
-        number_left {
-            bindings = <
-  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                  &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp BACKSPACE
-  &trans        &trans        &trans        &trans        &trans                  &trans        &trans  &trans  &trans  &kp ENTER
-  &trans        &trans        &trans        &trans        &trans                  &trans        &trans  &trans  &trans  &trans
-  &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans                                &trans
-            >;
-        };
-
-        number_right {
-            bindings = <
-  &kp ESCAPE  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                  &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0
-  &kp TAB     &trans        &trans        &trans        &trans                  &trans        &trans  &trans  &trans  &trans
-  &trans      &trans        &trans        &trans        &trans                  &trans        &trans  &trans  &trans  &trans
-  &trans      &trans        &trans        &trans        &trans  &trans  &trans  &trans                                &trans
-            >;
-        };
-
-        empty_right {
-            bindings = <
-  &kp ESCAPE      &trans        &trans        &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-  &kp TAB         &trans        &trans        &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-  &kp LEFT_SHIFT  &trans        &trans        &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans                          &trans
-            >;
-        };
-
         mouse_right {
             bindings = <
-  &kp ESCAPE      &trans        &trans        &trans  &trans                    &trans           &kp PAGE_UP    &msc SCRL_DOWN  &trans          &trans
-  &kp TAB         &trans        &trans        &mo 5   &trans                    &trans           &mkp LCLK      &mkp MCLK       &mkp RCLK       &trans
-  &kp LEFT_SHIFT  &trans        &trans        &trans  &trans                    &msc SCRL_RIGHT  &kp PAGE_DOWN  &msc SCRL_UP    &msc SCRL_LEFT  &trans
-  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &trans  &trans  &trans  &mkp MB4  &mkp MB5                                                        &trans
+  &trans  &trans  &trans  &trans  &trans                    &trans    &trans     &trans     &trans     &trans
+  &trans  &trans  &trans  &mo 6   &trans                    &trans    &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
+  &trans  &trans  &trans  &trans  &trans                    &trans    &trans     &trans     &trans     &trans
+  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB5                                   &trans
+            >;
+        };
+
+        scroll {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans                  &trans  &trans           &msc MOVE_Y(-5)  &trans          &trans
+  &mo 7   &trans  &trans  &trans  &trans                  &trans  &msc MOVE_Y(-5)  &msc MOVE_Y(5)   &msc MOVE_X(5)  &trans
+  &trans  &trans  &trans  &trans  &trans                  &trans  &trans           &trans           &trans          &trans
+  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                    &trans
+            >;
+        };
+
+        scroll_fast {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans                  &trans  &trans            &msc MOVE_Y(-10)  &trans           &trans
+  &trans  &trans  &trans  &trans  &trans                  &trans  &msc MOVE_Y(-10)  &msc MOVE_Y(10)   &msc MOVE_X(10)  &trans
+  &trans  &trans  &trans  &trans  &trans                  &trans  &trans            &trans            &trans           &trans
+  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                       &trans
             >;
         };
 
         curor_right {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                  &trans  &trans    &kp UP_ARROW  &trans     &kp BACKSPACE
-  &trans  &trans  &trans  &trans  &trans                  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp ENTER
-  &trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans        &trans     &kp ENTER
-  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                     &trans
+  &trans  &trans  &trans  &trans  &trans                  &trans  &kp PAGE_UP    &kp UP_ARROW  &trans     &trans
+  &trans  &trans  &trans  &trans  &trans                  &trans  &kp LEFT       &kp DOWN      &kp RIGHT  &trans
+  &trans  &trans  &trans  &trans  &trans                  &trans  &kp PAGE_DOWN  &trans        &trans     &trans
+  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                          &trans
             >;
         };
     };
