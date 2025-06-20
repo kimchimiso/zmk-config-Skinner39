@@ -36,8 +36,8 @@
 
         common_left {
             bindings = <
-  &kp ESCAPE  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-  &kp TAB     &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+  &kp ESCAPE  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &kp BACKSPACE
+  &kp TAB     &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &kp ENTER
   &trans      &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
   &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
@@ -45,10 +45,10 @@
 
         common_right {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &kp BACKSPACE
-  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &kp ENTER
-  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
+  &kp ESCAPE  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &kp BACKSPACE
+  &kp TAB     &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &kp ENTER
+  &trans      &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
         };
 
