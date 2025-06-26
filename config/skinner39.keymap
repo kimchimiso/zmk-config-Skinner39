@@ -29,10 +29,10 @@
 
         default_layer {
             bindings = <
-  &kp Q   &kp W   &kp E      &kp R                      &kp T                                                                   &kp Y                    &kp U    &kp I      &kp O       &kp P
-  &kp A   &kp S   &lt 8 D    &lt 3 F                    &kp G                                                                   &kp H                    &lt 3 J  &kp K      &kp L       &kp SEMICOLON
-  &kp Z   &kp X   &kp C      &kp V                      &kp B                                                                   &kp N                    &kp M    &kp COMMA  &kp PERIOD  &kp SLASH
-  &trans  &trans  &kp LCTRL  &Toggle_or_Hold_Layer 7 1  &mt LEFT_SHIFT SPACE  &Toggle_layer_and_hold_key LEFT_ALT 2  &kp ENTER  &mt RIGHT_GUI BACKSPACE                                  &kp UNDERSCORE
+  &kp Q   &kp W   &kp E      &kp R    &kp T                                          &kp Y                    &kp U    &kp I      &kp O       &kp P
+  &kp A   &kp S   &lt 8 D    &lt 3 F  &kp G                                          &kp H                    &lt 3 J  &kp K      &kp L       &kp SEMICOLON
+  &kp Z   &kp X   &kp C      &kp V    &kp B                                          &kp N                    &kp M    &kp COMMA  &kp PERIOD  &kp SLASH
+  &trans  &trans  &kp LCTRL  &trans   &mt LEFT_SHIFT SPACE  &kp LEFT_ALT  &kp ENTER  &mt RIGHT_GUI BACKSPACE                                  &kp MINUS
             >;
         };
 
@@ -57,7 +57,7 @@
         common {
             bindings = <
   &kp ESCAPE  &trans  &trans  &trans          &trans                  &trans          &trans  &trans  &trans  &trans
-  &kp TAB     &trans  &trans  &trans          &trans                  &trans          &trans  &trans  &trans  &trans
+  &kp TAB     &trans  &to 0   &trans          &trans                  &trans          &trans  &to 1   &to 2   &to 7
   &trans      &trans  &trans  &trans          &trans                  &trans          &trans  &trans  &trans  &trans
   &trans      &trans  &trans  &kp LANGUAGE_2  &trans  &trans  &trans  &kp LANGUAGE_1                          &trans
             >;
@@ -94,7 +94,7 @@
             bindings = <
   &trans  &trans  &trans  &trans  &trans                    &trans           &trans     &msc MOVE_Y(-20)  &trans     &trans
   &trans  &trans  &trans  &mo 6   &trans                    &msc MOVE_X(20)  &mkp LCLK  &mkp MCLK         &mkp RCLK  &msc MOVE_X(-20)
-  &trans  &trans  &trans  &trans  &trans                    &trans           &trans     &msc MOVE_Y(20)   &trans     &trans
+  &trans  &trans  &trans  &trans  &trans                    &trans           &trans     &msc MOVE_Y(20)   &trans     &to 0
   &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB5                                                 &trans
             >;
         };
