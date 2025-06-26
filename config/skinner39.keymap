@@ -4,33 +4,53 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    behaviors {
+        Toggle_or_Hold_Layer: Toggle_or_Hold_Layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TOGGLE_OR_HOLD_LAYER";
+            bindings = <&mo>, <&tog>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        Toggle_layer_and_hold_key: Toggle_layer_and_hold_key {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TOGGLE_LAYER_AND_HOLD_KEY";
+            bindings = <&kp>, <&tog>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-  &kp Q           &lt 2 W  &kp E      &kp R           &kp T                                          &kp Y                    &kp U    &kp I      &lt 2 O     &kp P
-  &kp A           &lt 1 S  &lt 8 D    &lt 3 F         &kp G                                          &kp H                    &lt 3 J  &kp K      &lt 1 L     &kp SEMICOLON
-  &kp Z           &kp X    &kp C      &kp V           &kp B                                          &kp N                    &kp M    &kp COMMA  &kp PERIOD  &kp SLASH
-  &kp LEFT_SHIFT  &trans   &kp LCTRL  &lt 7 LEFT_GUI  &mt LEFT_SHIFT SPACE  &kp LEFT_ALT  &kp ENTER  &mt RIGHT_GUI BACKSPACE                                  &mt RIGHT_SHIFT UNDERSCORE
+  &kp Q   &lt 2 W  &kp E      &kp R                      &kp T                                                                   &kp Y                    &kp U    &kp I      &lt 2 O     &kp P
+  &kp A   &lt 1 S  &lt 8 D    &lt 3 F                    &kp G                                                                   &kp H                    &lt 3 J  &kp K      &lt 1 L     &kp SEMICOLON
+  &kp Z   &kp X    &kp C      &kp V                      &kp B                                                                   &kp N                    &kp M    &kp COMMA  &kp PERIOD  &kp SLASH
+  &trans  &trans   &kp LCTRL  &Toggle_or_Hold_Layer 7 1  &mt LEFT_SHIFT SPACE  &Toggle_layer_and_hold_key LEFT_ALT 2  &kp ENTER  &mt RIGHT_GUI BACKSPACE                                  &kp UNDERSCORE
             >;
         };
 
         number {
             bindings = <
-  &trans                   &trans        &trans        &trans        &trans                  &kp MINUS     &kp EQUAL  &kp GRAVE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-  &mt LEFT_SHIFT NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                  &kp NUMBER_6  &kp N7     &kp NUMBER_8    &kp N9            &mt RIGHT_SHIFT N0
-  &trans                   &trans        &trans        &trans        &trans                  &kp INT_YEN   &trans     &kp APOSTROPHE  &trans            &trans
-  &trans                   &trans        &trans        &trans        &trans  &trans  &trans  &trans                                                     &trans
+  &trans        &trans        &trans        &trans        &trans                  &kp MINUS     &kp EQUAL  &kp GRAVE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                  &kp NUMBER_6  &kp N7     &kp NUMBER_8    &kp N9            &kp N0
+  &trans        &trans        &trans        &trans        &trans                  &kp INT_YEN   &trans     &kp APOSTROPHE  &trans            &trans
+  &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans                                                     &trans
             >;
         };
 
         function {
             bindings = <
-  &trans   &trans   &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                      &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-  &kp F11  &kp F12  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-  &trans   &trans   &trans  &trans  &trans  &bt BT_CLR  &trans  &trans                          &trans
+  &trans      &trans   &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+  &kp F1      &kp F2   &kp F3  &kp F4  &kp F5                  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+  &kp F11     &kp F12  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+  &bt BT_CLR  &trans   &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
         };
 
@@ -63,7 +83,7 @@
 
         layer_6_mouse_slow {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                    &kp A           &trans     &msc MOVE_Y(-5)  &trans     &trans
+  &trans  &trans  &trans  &trans  &trans                    &trans          &trans     &msc MOVE_Y(-5)  &trans     &trans
   &trans  &trans  &trans  &trans  &trans                    &msc MOVE_X(5)  &mkp LCLK  &mkp MCLK        &mkp RCLK  &msc MOVE_X(-5)
   &trans  &trans  &trans  &trans  &trans                    &trans          &trans     &msc MOVE_Y(5)   &trans     &trans
   &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp MB5                                               &trans
