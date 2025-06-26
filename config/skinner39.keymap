@@ -29,28 +29,28 @@
 
         default_layer {
             bindings = <
-  &kp Q  &kp W  &kp E      &kp R    &kp T                                                    &kp Y            &kp U    &kp I      &kp O       &kp P
-  &kp A  &kp S  &lt 9 D    &lt 3 F  &kp G                                                    &kp H            &lt 3 J  &kp K      &kp L       &kp SEMICOLON
-  &kp Z  &kp X  &kp C      &kp V    &kp B                                                    &kp N            &kp M    &kp COMMA  &kp PERIOD  &kp SLASH
-  &none  &none  &kp LCTRL  &to 0    &mt LEFT_SHIFT SPACE  &kp LEFT_ALT  &mt RIGHT_GUI ENTER  &lt 7 BACKSPACE                                  &kp MINUS
+  &kp Q  &kp W  &kp E      &kp R    &kp T                                                    &kp Y          &kp U    &kp I      &kp O       &kp P
+  &kp A  &kp S  &lt 9 D    &lt 3 F  &kp G                                                    &kp H          &lt 3 J  &kp K      &kp L       &lt 7 SEMICOLON
+  &kp Z  &kp X  &kp C      &kp V    &kp B                                                    &kp N          &kp M    &kp COMMA  &kp PERIOD  &kp SLASH
+  &none  &none  &kp LCTRL  &to 0    &mt LEFT_SHIFT SPACE  &kp LEFT_ALT  &mt RIGHT_GUI ENTER  &kp BACKSPACE                                  &kp MINUS
             >;
         };
 
         number {
             bindings = <
-  &to 0         &none         &none         &none         &none                   &kp MINUS     &kp EQUAL  &kp GRAVE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                  &kp NUMBER_6  &kp N7     &kp NUMBER_8    &kp N9            &kp N0
-  &none         &none         &none         &none         &none                   &kp INT_YEN   &none      &kp APOSTROPHE  &none             &none
-  &none         &none         &none         &trans        &trans  &trans  &trans  &trans                                                     &none
+  &to 0         &none         &none         &none           &none                   &kp MINUS     &kp EQUAL  &kp GRAVE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &lt 3 NUMBER_4  &kp N5                  &kp NUMBER_6  &lt 3 N7   &kp NUMBER_8    &kp N9            &kp N0
+  &none         &none         &none         &none           &none                   &kp INT_YEN   &none      &kp APOSTROPHE  &none             &none
+  &none         &none         &none         &trans          &trans  &trans  &trans  &trans                                                     &none
             >;
         };
 
         function {
             bindings = <
-  &to 0       &none    &none   &none   &none                   &none   &none   &none   &none   &to 0
-  &kp F1      &kp F2   &kp F3  &kp F4  &kp F5                  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-  &kp F11     &kp F12  &none   &none   &none                   &none   &none   &none   &none   &none
-  &bt BT_CLR  &none    &none   &trans  &trans  &trans  &trans  &trans                          &none
+  &to 0       &none    &none   &none     &none                   &none   &none     &none   &none   &to 0
+  &kp F1      &kp F2   &kp F3  &lt 3 F4  &kp F5                  &kp F6  &lt 3 F7  &kp F8  &kp F9  &kp F10
+  &kp F11     &kp F12  &none   &none     &none                   &none   &none     &none   &none   &none
+  &bt BT_CLR  &none    &none   &trans    &trans  &trans  &trans  &trans                            &none
             >;
         };
 
