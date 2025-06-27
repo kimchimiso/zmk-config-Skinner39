@@ -109,7 +109,7 @@
             bindings = <
   &none         &none         &none         &none         &none                   &kp MINUS     &kp EQUAL  &kp GRAVE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET
   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                  &kp NUMBER_6  &kp N7     &kp NUMBER_8    &kp N9            &kp N0
-  &none         &none         &none         &none         &none                   &kp INT_YEN   &none      &kp APOSTROPHE  &none             &none
+  &none         &none         &none         &none         &none                   &kp INT_YEN   &none      &kp APOSTROPHE  &trans            &trans
   &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans                                                     &trans
             >;
         };
