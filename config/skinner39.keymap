@@ -93,7 +93,7 @@
         layer_6_mouse_slow {
             bindings = <
   &to 0  &none  &none  &none   &none                   &none     &none      &none      &none      &to 0
-  &none  &none  &none  &none   &none                   &to 7     &mkp LCLK  &mkp MCLK  &mkp RCLK  &to 6
+  &none  &none  &none  &none   &none                   &to 6     &mkp LCLK  &mkp MCLK  &mkp RCLK  &to 7
   &none  &none  &none  &none   &none                   &mkp MB4  &mkp MB5   &to 8      &none      &none
   &none  &none  &none  &trans  &trans  &trans  &trans  &trans                                     &none
             >;
@@ -102,7 +102,7 @@
         mouse {
             bindings = <
   &to 0  &none  &none  &none   &none                   &none     &none                              &none      &none      &to 0
-  &none  &none  &none  &none   &none                   &to 7     &mouse_and_momentary_layer 3 LCLK  &mkp MCLK  &mkp RCLK  &to 6
+  &none  &none  &none  &none   &none                   &to 6     &mouse_and_momentary_layer 3 LCLK  &mkp MCLK  &mkp RCLK  &to 7
   &none  &none  &none  &none   &none                   &mkp MB4  &mkp MB5                           &to 8      &none      &none
   &none  &none  &none  &trans  &trans  &trans  &trans  &trans                                                             &none
             >;
@@ -111,7 +111,7 @@
         mouse_scroll {
             bindings = <
   &to 0  &none  &none  &none   &none                   &none     &none            &msc MOVE_Y(-20)  &none             &to 0
-  &none  &none  &none  &none   &none                   &to 7     &msc MOVE_X(20)  &msc MOVE_Y(20)   &msc MOVE_X(-20)  &to 6
+  &none  &none  &none  &none   &none                   &to 6     &msc MOVE_X(20)  &msc MOVE_Y(20)   &msc MOVE_X(-20)  &to 7
   &none  &none  &none  &none   &none                   &mkp MB4  &mkp MB5         &to 8             &none             &none
   &none  &none  &none  &trans  &trans  &trans  &trans  &trans                                                         &none
             >;
