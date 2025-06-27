@@ -44,7 +44,7 @@
 
         cursor {
             bindings = <&to 9>;
-            key-positions = <29 16>;
+            key-positions = <16 17 18>;
             layers = <0 1 2 4 5 6 7 8 9>;
         };
 
@@ -68,7 +68,7 @@
 
         to_number_layer {
             bindings = <&to 1>;
-            key-positions = <16 37>;
+            key-positions = <37 17>;
             layers = <0 1 2 4 5 6 7 8 9>;
         };
 
@@ -80,7 +80,7 @@
 
         to_default_layer_2 {
             bindings = <&to 0>;
-            key-positions = <13 34>;
+            key-positions = <34 12>;
         };
     };
 
@@ -107,7 +107,7 @@
 
         number {
             bindings = <
-  &to 0         &none         &none         &none         &none                   &kp MINUS     &kp EQUAL  &kp GRAVE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+  &none         &none         &none         &none         &none                   &kp MINUS     &kp EQUAL  &kp GRAVE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET
   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                  &kp NUMBER_6  &kp N7     &kp NUMBER_8    &kp N9            &kp N0
   &none         &none         &none         &none         &none                   &kp INT_YEN   &none      &kp APOSTROPHE  &none             &none
   &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans                                                     &trans
@@ -116,7 +116,7 @@
 
         function {
             bindings = <
-  &to 0    &none    &none   &none   &none                       &none   &none   &none   &none   &none
+  &none    &none    &none   &none   &none                       &none   &none   &none   &none   &none
   &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                      &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
   &kp F11  &kp F12  &none   &none   &bt BT_CLR                  &none   &none   &none   &none   &none
   &trans   &trans   &trans  &trans  &trans      &trans  &trans  &trans                          &none
@@ -152,7 +152,7 @@
 
         layer_6_mouse_slow {
             bindings = <
-  &to 0   &none   &none   &none   &none                   &none     &none      &none      &none      &none
+  &none   &none   &none   &none   &none                   &none     &none      &none      &none      &none
   &none   &none   &none   &none   &none                   &to 6     &mkp LCLK  &mkp MCLK  &mkp RCLK  &to 7
   &none   &none   &none   &none   &none                   &mkp MB4  &mkp MB5   &to 8      &none      &none
   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                     &none
@@ -161,7 +161,7 @@
 
         mouse {
             bindings = <
-  &to 0   &none   &none   &none   &none                   &none     &none      &none      &none      &none
+  &none   &none   &none   &none   &none                   &none     &none      &none      &none      &none
   &none   &none   &none   &none   &none                   &to 6     &mkp LCLK  &mkp MCLK  &mkp RCLK  &to 7
   &none   &none   &none   &none   &none                   &mkp MB4  &mkp MB5   &to 8      &none      &none
   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                     &none
@@ -170,7 +170,7 @@
 
         mouse_scroll {
             bindings = <
-  &to 0   &none   &none   &none   &none                   &none     &none            &msc MOVE_Y(-20)  &none             &none
+  &none   &none   &none   &none   &none                   &none     &none            &msc MOVE_Y(-20)  &none             &none
   &none   &none   &none   &none   &none                   &to 6     &msc MOVE_X(20)  &msc MOVE_Y(20)   &msc MOVE_X(-20)  &to 7
   &none   &none   &none   &none   &none                   &mkp MB4  &mkp MB5         &to 8             &none             &none
   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                         &none
@@ -179,7 +179,7 @@
 
         curor_right {
             bindings = <
-  &to 0   &none   &none   &none   &none                   &none     &none     &kp UP_ARROW  &none      &none
+  &none   &none   &none   &none   &none                   &none     &none     &kp UP_ARROW  &none      &none
   &none   &none   &none   &none   &none                   &none     &kp LEFT  &kp DOWN      &kp RIGHT  &none
   &none   &none   &none   &none   &none                   &kp HOME  &kp END   &none         &none      &none
   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                       &none
