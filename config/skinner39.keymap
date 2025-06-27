@@ -68,7 +68,7 @@
 
         to_number_layer {
             bindings = <&to 1>;
-            key-positions = <37 17>;
+            key-positions = <36 17>;
             layers = <0 1 2 4 5 6 7 8 9>;
         };
 
@@ -80,7 +80,7 @@
 
         to_default_layer_2 {
             bindings = <&to 0>;
-            key-positions = <34 12>;
+            key-positions = <35 12>;
         };
     };
 
