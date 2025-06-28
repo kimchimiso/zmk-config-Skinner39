@@ -112,6 +112,16 @@
             bindings = <&to 0>;
             key-positions = <8 16>;
         };
+
+        english {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <19 37>;
+        };
+
+        japanese {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <10 34>;
+        };
     };
 
     macros {
