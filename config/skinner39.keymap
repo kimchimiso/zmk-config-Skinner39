@@ -114,12 +114,12 @@
         };
 
         english {
-            bindings = <&kp LANGUAGE_2>;
+            bindings = <&kp LANGUAGE_1>;
             key-positions = <19 37>;
         };
 
         japanese {
-            bindings = <&kp LANGUAGE_1>;
+            bindings = <&kp LANGUAGE_2>;
             key-positions = <10 34>;
         };
     };
