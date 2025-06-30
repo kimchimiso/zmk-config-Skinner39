@@ -49,7 +49,7 @@
         };
 
         mouse_scroll_right {
-            bindings = <&msc MOVE_Y(-20)>;
+            bindings = <&msc MOVE_X(-20)>;
             key-positions = <17 19>;
         };
 
