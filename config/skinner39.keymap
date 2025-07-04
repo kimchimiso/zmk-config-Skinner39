@@ -55,12 +55,12 @@
 
         cursor_up {
             bindings = <&kp UP>;
-            key-positions = <2 13>;
+            key-positions = <2 1>;
         };
 
         down_cursor {
             bindings = <&kp DOWN>;
-            key-positions = <13 22>;
+            key-positions = <11 12>;
         };
 
         left_cursor {
