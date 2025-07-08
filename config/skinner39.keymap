@@ -110,12 +110,12 @@
 
         japanese {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <37 18>;
+            key-positions = <16 17 37>;
         };
 
         english {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <34 11>;
+            key-positions = <13 12 34>;
         };
 
         Tab_shift {
