@@ -108,14 +108,14 @@
             key-positions = <37 34>;
         };
 
-        english {
+        japanese {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <37 17>;
+            key-positions = <37 16>;
         };
 
-        japanese {
+        english {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <34 12>;
+            key-positions = <34 13>;
         };
 
         Tab_shift {
