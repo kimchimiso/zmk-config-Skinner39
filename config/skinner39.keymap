@@ -35,22 +35,22 @@
 
         mouse_scroll_up {
             bindings = <&msc MOVE_Y(-20)>;
-            key-positions = <16 7>;
+            key-positions = <16 7 37>;
         };
 
         mouse_scoll_down {
             bindings = <&msc MOVE_Y(20)>;
-            key-positions = <16 27>;
+            key-positions = <16 18 37>;
         };
 
         mouse_scroll_left {
             bindings = <&msc MOVE_X(20)>;
-            key-positions = <18 16>;
+            key-positions = <16 37 17>;
         };
 
         mouse_scroll_right {
             bindings = <&msc MOVE_X(-20)>;
-            key-positions = <17 19>;
+            key-positions = <17 37 18>;
         };
 
         cursor_up {
@@ -60,7 +60,7 @@
 
         down_cursor {
             bindings = <&kp DOWN>;
-            key-positions = <22 13>;
+            key-positions = <13 11>;
         };
 
         left_cursor {
@@ -95,12 +95,12 @@
 
         home {
             bindings = <&kp HOME>;
-            key-positions = <16 7 37>;
+            key-positions = <13 2 34>;
         };
 
         end {
             bindings = <&kp END>;
-            key-positions = <16 37 27>;
+            key-positions = <11 13 34>;
         };
 
         to_function_layer {
@@ -110,12 +110,12 @@
 
         japanese {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <37 16>;
+            key-positions = <37 19>;
         };
 
         english {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <34 13>;
+            key-positions = <34 10>;
         };
 
         Tab_shift {
