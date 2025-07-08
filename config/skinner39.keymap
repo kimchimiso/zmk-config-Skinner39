@@ -136,13 +136,13 @@
   &kp Q           &kp W         &kp E      &kp R        &kp T                                                   &kp Y          &kp U  &kp I      &kp O       &kp P
   &kp A           &kp S         &kp D      &kp F        &kp G                                                   &kp H          &kp J  &kp K      &kp L       &kp SEMI
   &kp Z           &kp X         &kp C      &kp V        &kp B                                                   &kp N          &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LCTRL  &lt 1 SPACE  &lt 2 SPACE  &mt LEFT_SHIFT SPACE  &mt RIGHT_GUI ENTER  &kp BACKSPACE                                &kp MINUS
+  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LCTRL  &lt 1 SPACE  &lt 2 SPACE  &mt LEFT_SHIFT SPACE  &mt RIGHT_GUI ENTER  &kp BACKSPACE                                &kp UNDERSCORE
             >;
         };
 
         number {
             bindings = <
-  &none         &none         &none         &none         &none                   &kp EQUAL     &kp GRAVE      &kp APOSTROPHE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+  &none         &none         &none         &none         &none                   &kp KP_MINUS  &kp GRAVE      &kp APOSTROPHE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                  &kp NUMBER_6  &kp N7         &kp NUMBER_8    &kp N9            &kp N0
   &none         &none         &none         &none         &none                   &kp INT_YEN   &kp BACKSLASH  &trans          &trans            &trans
   &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans                                                         &trans
@@ -151,10 +151,10 @@
 
         number+shift {
             bindings = <
-  &none             &none             &none             &none             &none                       &kp LS(EQUAL)     &kp LS(GRAVE)      &kp LS(APOSTROPHE)  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)
+  &none             &none             &none             &none             &none                       &kp KP_EQUAL      &kp LS(GRAVE)      &kp LS(APOSTROPHE)  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)
   &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                  &kp LS(NUMBER_6)  &kp LS(N7)         &kp LS(NUMBER_8)    &kp LS(N9)            &kp LS(N0)
   &none             &none             &none             &none             &none                       &kp LS(INT_YEN)   &kp LS(BACKSLASH)  &kp LS(COMMA)       &kp LS(PERIOD)        &kp LS(SLASH)
-  &trans            &trans            &trans            &trans            &trans      &trans  &trans  &trans                                                                         &kp LS(MINUS)
+  &trans            &trans            &trans            &trans            &trans      &trans  &trans  &trans                                                                         &kp PLUS
             >;
         };
 
