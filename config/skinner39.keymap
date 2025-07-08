@@ -75,12 +75,12 @@
 
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <13 0>;
+            key-positions = <12 33>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <10 13>;
+            key-positions = <12 35>;
         };
 
         mouse_previous {
@@ -95,12 +95,12 @@
 
         home {
             bindings = <&kp HOME>;
-            key-positions = <9 16>;
+            key-positions = <16 7 37>;
         };
 
         end {
             bindings = <&kp END>;
-            key-positions = <16 29>;
+            key-positions = <16 37 27>;
         };
 
         to_function_layer {
@@ -110,12 +110,17 @@
 
         english {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <19 37>;
+            key-positions = <37 17>;
         };
 
         japanese {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <10 34>;
+            key-positions = <34 12>;
+        };
+
+        Tab_shift {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <12 34>;
         };
     };
 
