@@ -142,16 +142,16 @@
 
         number {
             bindings = <
-  &none         &kp SINGLE_QUOTE  &none         &none         &none                   &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp CARET  &kp AT_SIGN
-  &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3  &kp NUMBER_4  &kp N5                  &kp NUMBER_6  &kp N7            &kp NUMBER_8       &kp N9     &kp N0
-  &none         &none             &none         &none         &none                   &kp INT_YEN   &kp BACKSLASH     &trans             &trans     &kp PIPE
-  &trans        &trans            &trans        &trans        &trans  &trans  &trans  &trans                                                        &kp TILDE
+  &none         &kp SINGLE_QUOTE  &none         &none         &none                   &kp LS(EQUAL)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp CARET  &kp AT_SIGN
+  &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3  &kp NUMBER_4  &kp N5                  &kp NUMBER_6   &kp N7            &kp NUMBER_8       &kp N9     &kp N0
+  &none         &none             &none         &none         &none                   &kp INT_YEN    &kp BACKSLASH     &trans             &trans     &kp PIPE
+  &trans        &trans            &trans        &trans        &trans  &trans  &trans  &trans                                                         &kp TILDE
             >;
         };
 
         number+shift {
             bindings = <
-  &none             &kp SINGLE_QUOTE   &none             &none             &none                       &kp LS(EQUAL)    &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &none           &kp GRAVE
+  &none             &kp SINGLE_QUOTE   &none             &none             &none                       &kp EQUAL        &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &none           &kp GRAVE
   &kp LS(NUMBER_1)  &kp DOUBLE_QUOTES  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                  &kp AMPERSAND    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK    &kp COLON
   &none             &none              &none             &none             &none                       &kp LS(INT_YEN)  &kp LS(BACKSLASH)     &kp LS(COMMA)          &kp LS(PERIOD)  &kp LS(SLASH)
   &trans            &trans             &trans            &trans            &trans      &trans  &trans  &trans                                                                        &kp LS(MINUS)
