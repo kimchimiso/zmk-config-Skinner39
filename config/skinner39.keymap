@@ -20,67 +20,67 @@
 
         mouse_left_click {
             bindings = <&mkp LCLK>;
-            key-positions = <16 17>;
+            key-positions = <16 37>;
         };
 
         mouse_middle_click {
             bindings = <&mkp MCLK>;
-            key-positions = <7 8>;
+            key-positions = <17 37>;
         };
 
         mouse_right_click {
             bindings = <&mkp RCLK>;
-            key-positions = <18 17>;
+            key-positions = <18 37>;
         };
 
         mouse_scroll_up {
             bindings = <&msc MOVE_Y(-20)>;
-            key-positions = <16 7 37>;
+            key-positions = <7 36>;
         };
 
         mouse_scoll_down {
             bindings = <&msc MOVE_Y(20)>;
-            key-positions = <16 18 37>;
+            key-positions = <17 36>;
         };
 
         mouse_scroll_left {
             bindings = <&msc MOVE_X(20)>;
-            key-positions = <16 37 17>;
+            key-positions = <16 37>;
         };
 
         mouse_scroll_right {
             bindings = <&msc MOVE_X(-20)>;
-            key-positions = <17 37 18>;
+            key-positions = <37 18>;
         };
 
         cursor_up {
             bindings = <&kp UP>;
-            key-positions = <13 2>;
+            key-positions = <2 35>;
         };
 
         down_cursor {
             bindings = <&kp DOWN>;
-            key-positions = <13 11>;
+            key-positions = <35 12>;
         };
 
         left_cursor {
             bindings = <&kp LEFT>;
-            key-positions = <11 12>;
+            key-positions = <11 35>;
         };
 
         right_cursor {
             bindings = <&kp RIGHT>;
-            key-positions = <13 12>;
+            key-positions = <13 35>;
         };
 
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <12 33>;
+            key-positions = <0 35>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <12 35>;
+            key-positions = <10 34>;
         };
 
         mouse_previous {
@@ -95,12 +95,12 @@
 
         home {
             bindings = <&kp HOME>;
-            key-positions = <13 2 34>;
+            key-positions = <2 34>;
         };
 
         end {
             bindings = <&kp END>;
-            key-positions = <11 13 34>;
+            key-positions = <34 12>;
         };
 
         to_function_layer {
@@ -110,17 +110,17 @@
 
         japanese {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <37 19>;
+            key-positions = <37 18>;
         };
 
         english {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <34 10>;
+            key-positions = <34 11>;
         };
 
         Tab_shift {
             bindings = <&kp LS(TAB)>;
-            key-positions = <12 34>;
+            key-positions = <10 33>;
         };
     };
 
