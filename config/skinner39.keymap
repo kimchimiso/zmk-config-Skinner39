@@ -17,7 +17,7 @@
         mouse_middle_click {
             bindings = <&mkp MCLK>;
             key-positions = <16 18>;
-            timeout-ms = <15>;
+            timeout-ms = <20>;
         };
 
         mouse_right_click {
