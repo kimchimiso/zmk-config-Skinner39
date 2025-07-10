@@ -11,59 +11,67 @@
             bindings = <&mkp LCLK>;
             key-positions = <16 17>;
             slow-release;
-            timeout-ms = <20>;
+            timeout-ms = <10>;
         };
 
         mouse_middle_click {
             bindings = <&mkp MCLK>;
-            key-positions = <16 7>;
-            timeout-ms = <20>;
+            key-positions = <16 18>;
+            timeout-ms = <10>;
         };
 
         mouse_right_click {
             bindings = <&mkp RCLK>;
-            key-positions = <16 18>;
-            timeout-ms = <20>;
+            key-positions = <18 17>;
+            timeout-ms = <10>;
         };
 
         mouse_scroll_up {
             bindings = <&msc MOVE_Y(-15)>;
-            key-positions = <7 37>;
+            key-positions = <7 16>;
+            timeout-ms = <10>;
         };
 
         mouse_scoll_down {
             bindings = <&msc MOVE_Y(15)>;
-            key-positions = <17 37>;
+            key-positions = <16 27>;
+            timeout-ms = <10>;
         };
 
         mouse_scroll_left {
             bindings = <&msc MOVE_X(15)>;
-            key-positions = <16 37>;
+            key-positions = <17 6>;
+            timeout-ms = <10>;
         };
 
         mouse_scroll_right {
             bindings = <&msc MOVE_X(-15)>;
-            key-positions = <18 37>;
+            key-positions = <17 8>;
+            timeout-ms = <10>;
         };
 
         cursor_up {
             bindings = <&kp UP>;
-            key-positions = <2 34>;
+            key-positions = <2 13>;
+            timeout-ms = <10>;
         };
 
         down_cursor {
             bindings = <&kp DOWN>;
-            key-positions = <12 34>;
+            key-positions = <22 13>;
+            timeout-ms = <10>;
         };
 
         left_cursor {
             bindings = <&kp LEFT>;
-            key-positions = <11 34>;
+            key-positions = <11 12>;
+            timeout-ms = <10>;
         };
 
         right_cursor {
             bindings = <&kp RIGHT>;
-            key-positions = <13 34>;
+            key-positions = <13 12>;
+            timeout-ms = <10>;
         };
 
         esc {
