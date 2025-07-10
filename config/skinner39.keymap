@@ -11,7 +11,7 @@
             bindings = <&mkp LCLK>;
             key-positions = <16 17>;
             slow-release;
-            timeout-ms = <15>;
+            timeout-ms = <20>;
         };
 
         mouse_middle_click {
@@ -23,7 +23,7 @@
         mouse_right_click {
             bindings = <&mkp RCLK>;
             key-positions = <18 17>;
-            timeout-ms = <15>;
+            timeout-ms = <20>;
         };
 
         mouse_scroll_up {
