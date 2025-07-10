@@ -29,7 +29,7 @@
         mouse_scroll_up {
             bindings = <&msc MOVE_Y(-15)>;
             key-positions = <7 16>;
-            timeout-ms = <15>;
+            timeout-ms = <20>;
         };
 
         mouse_scoll_down {
