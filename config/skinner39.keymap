@@ -4,17 +4,6 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-    behaviors {
-        hold_key_tap_toggle: hold_key_tap_toggle {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_KEY_TAP_TOGGLE";
-            bindings = <&kp>, <&to>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-    };
-
     combos {
         compatible = "zmk,combos";
 
@@ -38,24 +27,22 @@
         };
 
         mouse_scroll_up {
-            bindings = <&msc MOVE_Y(-20)>;
+            bindings = <&msc MOVE_Y(-5)>;
             key-positions = <7 37>;
-            timeout-ms = <20>;
         };
 
         mouse_scoll_down {
-            bindings = <&msc MOVE_Y(20)>;
+            bindings = <&msc MOVE_Y(5)>;
             key-positions = <17 37>;
-            timeout-ms = <20>;
         };
 
         mouse_scroll_left {
-            bindings = <&msc MOVE_X(20)>;
+            bindings = <&msc MOVE_X(5)>;
             key-positions = <16 37>;
         };
 
         mouse_scroll_right {
-            bindings = <&msc MOVE_X(-20)>;
+            bindings = <&msc MOVE_X(-5)>;
             key-positions = <18 37>;
         };
 
@@ -127,15 +114,6 @@
         Tab_shift {
             bindings = <&kp LS(TAB)>;
             key-positions = <10 33>;
-        };
-    };
-
-    macros {
-        new_macro: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none>;
-            label = "NEW_MACRO";
         };
     };
 
