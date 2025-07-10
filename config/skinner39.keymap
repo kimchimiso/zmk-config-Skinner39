@@ -11,43 +11,43 @@
             bindings = <&mkp LCLK>;
             key-positions = <16 17>;
             slow-release;
-            timeout-ms = <10>;
+            timeout-ms = <15>;
         };
 
         mouse_middle_click {
             bindings = <&mkp MCLK>;
             key-positions = <16 18>;
-            timeout-ms = <10>;
+            timeout-ms = <15>;
         };
 
         mouse_right_click {
             bindings = <&mkp RCLK>;
             key-positions = <18 17>;
-            timeout-ms = <10>;
+            timeout-ms = <15>;
         };
 
         mouse_scroll_up {
             bindings = <&msc MOVE_Y(-15)>;
             key-positions = <7 16>;
-            timeout-ms = <10>;
+            timeout-ms = <15>;
         };
 
         mouse_scoll_down {
             bindings = <&msc MOVE_Y(15)>;
             key-positions = <16 27>;
-            timeout-ms = <10>;
+            timeout-ms = <15>;
         };
 
         mouse_scroll_left {
             bindings = <&msc MOVE_X(15)>;
             key-positions = <17 6>;
-            timeout-ms = <10>;
+            timeout-ms = <15>;
         };
 
         mouse_scroll_right {
             bindings = <&msc MOVE_X(-15)>;
             key-positions = <17 8>;
-            timeout-ms = <10>;
+            timeout-ms = <15>;
         };
 
         cursor_up {
@@ -76,22 +76,22 @@
 
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <0 34>;
+            key-positions = <0 13>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <10 34>;
+            key-positions = <10 13>;
         };
 
         mouse_previous {
             bindings = <&mkp MB4>;
-            key-positions = <36 16>;
+            key-positions = <36 18>;
         };
 
         mouse_next {
             bindings = <&mkp MB5>;
-            key-positions = <16 37>;
+            key-positions = <37 18>;
         };
 
         home {
@@ -101,27 +101,30 @@
 
         end {
             bindings = <&kp END>;
-            key-positions = <35 13>;
+            key-positions = <11 34>;
         };
 
         to_function_layer {
             bindings = <&mo 3>;
             key-positions = <37 34>;
+            timeout-ms = <15>;
         };
 
         japanese {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <16 17 37>;
+            key-positions = <17 37>;
+            timeout-ms = <15>;
         };
 
         english {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <13 12 34>;
+            key-positions = <12 34>;
+            timeout-ms = <15>;
         };
 
         Tab_shift {
             bindings = <&kp LS(TAB)>;
-            key-positions = <10 33>;
+            key-positions = <13 20>;
         };
     };
 
