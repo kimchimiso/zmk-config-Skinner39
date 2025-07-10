@@ -35,19 +35,19 @@
         mouse_scoll_down {
             bindings = <&msc MOVE_Y(15)>;
             key-positions = <16 27>;
-            timeout-ms = <15>;
+            timeout-ms = <20>;
         };
 
         mouse_scroll_left {
             bindings = <&msc MOVE_X(15)>;
             key-positions = <17 6>;
-            timeout-ms = <15>;
+            timeout-ms = <20>;
         };
 
         mouse_scroll_right {
             bindings = <&msc MOVE_X(-15)>;
             key-positions = <17 8>;
-            timeout-ms = <15>;
+            timeout-ms = <20>;
         };
 
         cursor_up {
