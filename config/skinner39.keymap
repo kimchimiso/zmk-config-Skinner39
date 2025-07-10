@@ -27,22 +27,22 @@
         };
 
         mouse_scroll_up {
-            bindings = <&msc MOVE_Y(-5)>;
+            bindings = <&msc MOVE_Y(-10)>;
             key-positions = <7 37>;
         };
 
         mouse_scoll_down {
-            bindings = <&msc MOVE_Y(5)>;
+            bindings = <&msc MOVE_Y(10)>;
             key-positions = <17 37>;
         };
 
         mouse_scroll_left {
-            bindings = <&msc MOVE_X(5)>;
+            bindings = <&msc MOVE_X(10)>;
             key-positions = <16 37>;
         };
 
         mouse_scroll_right {
-            bindings = <&msc MOVE_X(-5)>;
+            bindings = <&msc MOVE_X(-10)>;
             key-positions = <18 37>;
         };
 
