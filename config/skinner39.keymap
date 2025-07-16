@@ -26,105 +26,10 @@
             timeout-ms = <20>;
         };
 
-        mouse_scroll_up {
-            bindings = <&msc MOVE_Y(-15)>;
-            key-positions = <7 16>;
-            timeout-ms = <20>;
-        };
-
-        mouse_scoll_down {
-            bindings = <&msc MOVE_Y(15)>;
-            key-positions = <16 27>;
-            timeout-ms = <20>;
-        };
-
-        mouse_scroll_left {
-            bindings = <&msc MOVE_X(15)>;
-            key-positions = <17 6>;
-            timeout-ms = <20>;
-        };
-
-        mouse_scroll_right {
-            bindings = <&msc MOVE_X(-15)>;
-            key-positions = <17 8>;
-            timeout-ms = <20>;
-        };
-
-        cursor_up {
-            bindings = <&kp UP>;
-            key-positions = <2 13>;
-            timeout-ms = <10>;
-        };
-
-        down_cursor {
-            bindings = <&kp DOWN>;
-            key-positions = <22 13>;
-            timeout-ms = <10>;
-        };
-
-        left_cursor {
-            bindings = <&kp LEFT>;
-            key-positions = <11 12>;
-            timeout-ms = <10>;
-        };
-
-        right_cursor {
-            bindings = <&kp RIGHT>;
-            key-positions = <13 12>;
-            timeout-ms = <10>;
-        };
-
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <0 13>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <10 13>;
-        };
-
-        mouse_previous {
-            bindings = <&mkp MB4>;
-            key-positions = <36 18>;
-        };
-
-        mouse_next {
-            bindings = <&mkp MB5>;
-            key-positions = <37 18>;
-        };
-
-        home {
-            bindings = <&kp HOME>;
-            key-positions = <11 35>;
-        };
-
-        end {
-            bindings = <&kp END>;
-            key-positions = <11 34>;
-        };
-
         to_function_layer {
             bindings = <&mo 3>;
             key-positions = <37 34>;
             timeout-ms = <15>;
-        };
-
-        japanese {
-            bindings = <&kp LANGUAGE_1>;
-            key-positions = <17 37>;
-            timeout-ms = <15>;
-        };
-
-        english {
-            bindings = <&kp LANGUAGE_2>;
-            key-positions = <12 34>;
-            timeout-ms = <15>;
-        };
-
-        Tab_shift {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <13 20>;
         };
     };
 
@@ -162,12 +67,12 @@
             bindings = <
   &none    &none    &none   &none   &none                       &none   &none   &none   &none   &none
   &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                      &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-  &kp F11  &kp F12  &none   &none   &bt BT_CLR                  &none   &none   &none   &none   &none
+  &kp F11  &kp F12  &none   &none   &bt BT_CLR                  &none   &none   &none   &none   &kp LC(LG(SPACE))
   &trans   &trans   &trans  &trans  &trans      &trans  &trans  &trans                          &none
             >;
         };
 
-        empty_1 {
+        empty {
             bindings = <
   &none   &none   &none   &none   &none                   &none   &none  &none   &none   &none
   &none   &none   &none   &none   &none                   &none   &none  &none   &none   &none
