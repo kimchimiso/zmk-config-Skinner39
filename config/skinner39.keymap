@@ -11,10 +11,10 @@
 
         default_layer {
             bindings = <
-  &kp Q             &kp W         &kp E      &kp R             &kp T                                        &kp Y      &kp U    &kp I      &kp O       &kp P
-  &mt LEFT_SHIFT A  &lt 2 S       &lt 7 D    &lt 1 F           &kp G                                        &kp H      &lt 1 J  &lt 7 K    &lt 2 L     &mt RIGHT_SHIFT SEMI
-  &kp Z             &kp X         &kp C      &kp V             &kp B                                        &kp N      &kp M    &kp COMMA  &kp PERIOD  &kp SLASH
-  &kp LEFT_SHIFT    &kp LEFT_ALT  &kp LCTRL  &kp LEFT_COMMAND  &kp SPACE  &kp LANGUAGE_2  &lt 3 LANGUAGE_1  &kp SPACE                                  &kp MINUS
+  &kp Q             &kp W         &kp E      &kp R             &kp T                                        &kp Y          &kp U    &kp I      &kp O       &kp P
+  &mt LEFT_SHIFT A  &lt 2 S       &lt 7 D    &lt 1 F           &kp G                                        &kp H          &lt 1 J  &lt 7 K    &lt 2 L     &mt RIGHT_SHIFT SEMI
+  &kp Z             &kp X         &kp C      &kp V             &kp B                                        &kp N          &kp M    &kp COMMA  &kp PERIOD  &kp SLASH
+  &kp LEFT_SHIFT    &kp LEFT_ALT  &kp LCTRL  &kp LEFT_COMMAND  &kp SPACE  &kp LANGUAGE_2  &lt 3 LANGUAGE_1  &kp BACKSPACE                                  &kp MINUS
             >;
         };
 
@@ -23,7 +23,7 @@
   &none         &kp SINGLE_QUOTE  &none         &none         &none                      &kp LS(EQUAL)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp CARET  &kp AT_SIGN
   &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3  &kp NUMBER_4  &kp N5                     &kp NUMBER_6   &kp N7            &kp NUMBER_8       &kp N9     &kp N0
   &none         &none             &none         &none         &none                      &kp INT_YEN    &kp BACKSLASH     &trans             &trans     &kp PIPE
-  &trans        &trans            &trans        &trans        &trans  &trans  &kp ENTER  &kp BACKSPACE                                                  &kp TILDE
+  &trans        &trans            &trans        &trans        &trans  &trans  &kp ENTER  &trans                                                         &kp TILDE
             >;
         };
 
@@ -32,16 +32,16 @@
   &none             &kp SINGLE_QUOTE   &none             &none             &none                          &kp EQUAL        &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &none           &kp GRAVE
   &kp LS(NUMBER_1)  &kp DOUBLE_QUOTES  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                     &kp AMPERSAND    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK    &kp COLON
   &none             &none              &none             &none             &none                          &kp LS(INT_YEN)  &kp LS(BACKSLASH)     &kp LS(COMMA)          &kp LS(PERIOD)  &kp LS(SLASH)
-  &trans            &trans             &trans            &trans            &trans      &trans  &kp ENTER  &kp BACKSPACE                                                                 &kp LS(MINUS)
+  &trans            &trans             &trans            &trans            &trans      &trans  &kp ENTER  &trans                                                                        &kp LS(MINUS)
             >;
         };
 
         function {
             bindings = <
-  &none    &none    &none   &none   &none                          &none          &none   &none   &none   &none
-  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                         &kp F6         &kp F7  &kp F8  &kp F9  &kp F10
-  &kp F11  &kp F12  &none   &none   &bt BT_CLR                     &none          &none   &none   &none   &kp LC(LG(SPACE))
-  &trans   &trans   &trans  &trans  &trans      &trans  &kp ENTER  &kp BACKSPACE                          &none
+  &none    &none    &none   &none   &none                          &none   &none   &none   &none   &none
+  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                         &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+  &kp F11  &kp F12  &none   &none   &bt BT_CLR                     &none   &none   &none   &none   &kp LC(LG(SPACE))
+  &trans   &trans   &trans  &trans  &trans      &trans  &kp ENTER  &trans                          &none
             >;
         };
 
@@ -77,7 +77,7 @@
   &kp ESCAPE      &none     &none   &kp UP_ARROW    &kp HOME                            &mkp MB4         &msc MOVE_Y(-15)  &none  &none      &none
   &kp TAB         &kp LEFT  &none   &kp RIGHT       &kp END                             &mkp MB5         &mkp LCLK         &none  &mkp RCLK  &mkp MCLK
   &kp LEFT_SHIFT  &none     &none   &kp DOWN_ARROW  &none                               &msc MOVE_X(15)  &msc MOVE_Y(15)   &none  &none      &msc MOVE_X(-15)
-  &trans          &trans    &trans  &trans          &kp RIGHT_SHIFT  &trans  &kp ENTER  &kp BACKSPACE                                        &none
+  &trans          &trans    &trans  &trans          &kp RIGHT_SHIFT  &trans  &kp ENTER  &trans                                               &none
             >;
         };
     };
