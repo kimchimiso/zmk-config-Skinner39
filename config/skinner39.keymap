@@ -81,10 +81,10 @@
 
         cursor {
             bindings = <
-  &kp ESCAPE      &kp LANGUAGE_2  &none   &kp UP_ARROW    &kp HOME                            &mkp MB4         &msc MOVE_Y(-15)  &none  &kp LANGUAGE_1  &none
-  &kp TAB         &kp LEFT        &none   &kp RIGHT       &kp END                             &mkp MB5         &mkp LCLK         &none  &mkp RCLK       &mkp MCLK
-  &kp LEFT_SHIFT  &none           &none   &kp DOWN_ARROW  &none                               &msc MOVE_X(15)  &msc MOVE_Y(15)   &none  &none           &msc MOVE_X(-15)
-  &trans          &trans          &trans  &trans          &kp RIGHT_SHIFT  &trans  &kp ENTER  &trans                                                    &none
+  &kp ESCAPE      &kp LANGUAGE_2  &none   &kp UP_ARROW    &kp HOME                  &mkp MB4         &msc MOVE_Y(-15)  &none  &kp LANGUAGE_1  &none
+  &kp TAB         &kp LEFT        &mo 3   &kp RIGHT       &kp END                   &mkp MB5         &mkp LCLK         &mo 3  &mkp RCLK       &mkp MCLK
+  &kp LEFT_SHIFT  &none           &none   &kp DOWN_ARROW  &none                     &msc MOVE_X(15)  &msc MOVE_Y(15)   &none  &none           &msc MOVE_X(-15)
+  &trans          &trans          &trans  &trans          &trans    &trans  &trans  &trans                                                    &none
             >;
         };
     };
