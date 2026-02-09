@@ -36,9 +36,9 @@
 
         number+shift {
             bindings = <
-  &none            &kp GRAVE          &kp APOSTROPHE    &kp HASH           &none                        &kp TILDE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS  &kp EQUAL
+  &none            &kp GRAVE          &kp APOSTROPHE    &none              &none                        &kp TILDE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS  &kp EQUAL
   &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE                     &kp AMPERSAND  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &none     &kp COLON
-  &trans           &none              &none             &none              &none                        &kp AT         &kp UNDER             &trans                 &trans    &mt RIGHT_SHIFT QUESTION
+  &trans           &none              &none             &kp HASH           &none                        &kp AT         &kp UNDER             &trans                 &trans    &mt RIGHT_SHIFT QUESTION
   &trans           &trans             &trans            &trans             &trans    &trans  &kp ENTER  &trans                                                                &kp BACKSLASH
             >;
         };
