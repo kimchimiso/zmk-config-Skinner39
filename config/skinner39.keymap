@@ -27,10 +27,10 @@
 
         number {
             bindings = <
-  &kp ASTRK       &kp PERCENT   &kp LESS_THAN  &kp GREATER_THAN  &kp DOLLAR                     &kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS  &kp EQUAL
-  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4      &kp N5                         &kp NUMBER_6          &kp N7                &kp NUMBER_8           &kp N9    &kp N0
-  &kp LEFT_SHIFT  &none         &none          &kp CARET         &none                          &none                 &none                 &trans                 &trans    &trans
-  &trans          &trans        &trans         &trans            &trans      &trans  &kp ENTER  &trans                                                                       &trans
+  &kp ASTRK       &kp PERCENT   &kp LESS_THAN  &kp GREATER_THAN  &kp DOLLAR                     &kp LA(Y)     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS  &kp EQUAL
+  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4      &kp N5                         &kp NUMBER_6  &kp N7                &kp NUMBER_8           &kp N9    &kp N0
+  &kp LEFT_SHIFT  &none         &none          &kp CARET         &none                          &none         &none                 &trans                 &trans    &trans
+  &trans          &trans        &trans         &trans            &trans      &trans  &kp ENTER  &trans                                                               &trans
             >;
         };
 
@@ -54,10 +54,10 @@
 
         empty {
             bindings = <
-  &kp INTERNATIONAL_1  &kp INTERNATIONAL_2   &kp INTERNATIONAL_3  &kp INTERNATIONAL_4  &kp INTERNATIONAL_5                  &kp INTERNATIONAL_6  &kp INTERNATIONAL_7  &kp INTERNATIONAL_8  &kp INTERNATIONAL_9  &none
-  &kp BACKSLASH        &kp NON_US_BACKSLASH  &kp NON_US_HASH      &kp NON_US_BSLH      &none                                &none                &none                &none                &none                &none
-  &none                &none                 &none                &none                &none                                &none                &none                &trans               &trans               &trans
-  &trans               &trans                &trans               &trans               &trans               &trans  &trans  &trans                                                                              &trans
+  &none   &none   &none   &none   &none                   &none   &none  &none   &none   &none
+  &none   &none   &none   &none   &none                   &none   &none  &none   &none   &none
+  &none   &none   &none   &none   &none                   &none   &none  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                         &trans
             >;
         };
 
