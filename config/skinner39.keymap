@@ -36,10 +36,10 @@
 
         number+shift {
             bindings = <
-  &none            &kp GRAVE          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp APOSTROPHE                  &kp TILDE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS  &kp EQUAL
-  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH          &none              &kp PIPE                        &kp AMPERSAND  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &none     &kp COLON
-  &none            &none              &kp LESS_THAN     &kp GREATER_THAN   &none                           &kp AT         &kp UNDER             &trans                 &trans    &mt RIGHT_SHIFT QUESTION
-  &trans           &trans             &trans            &trans             &trans          &trans  &trans  &trans                                                                &kp BACKSLASH
+  &none            &kp SINGLE_QUOTE   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE                  &kp TILDE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS  &kp EQUAL
+  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH          &none              &kp PIPE                   &kp AMPERSAND  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &none     &kp COLON
+  &none            &none              &kp LESS_THAN     &kp GREATER_THAN   &none                      &kp AT         &kp UNDER             &trans                 &trans    &mt RIGHT_SHIFT QUESTION
+  &trans           &trans             &trans            &trans             &trans     &trans  &trans  &trans                                                                &kp BACKSLASH
             >;
         };
 
