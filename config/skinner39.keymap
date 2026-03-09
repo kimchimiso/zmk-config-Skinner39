@@ -100,10 +100,10 @@
 
         default_layer_win {
             bindings = <
-  &kp Q             &kp W         &kp E      &kp R  &kp T                                                 &kp Y          &kp U    &kp I      &kp O       &lt 7 P
-  &kp A             &lt 10 S      &lt 11 D   &kp F  &kp G                                                 &kp H          &kp J    &lt 4 K    &lt 3 L     &kp SEMICOLON
+  &kp Q             &kp W         &kp E      &kp R  &kp T                                                 &kp Y          &kp U    &kp I      &kp O       &lt 6 P
+  &kp A             &lt 10 S      &lt 11 D   &kp F  &kp G                                                 &kp H          &kp J    &lt 11 K   &lt 10 L    &kp SEMICOLON
   &kp Z             &kp X         &kp C      &kp V  &kp B                                                 &kp N          &lt 5 M  &kp COMMA  &kp PERIOD  &kp MINUS
-  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LCTRL  &mo 9  &mt LEFT_SHIFT SPACE  &mo 1  &mt RIGHT_CONTROL ENTER  &kp BACKSPACE                                  &kp SLASH
+  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LCTRL  &mo 9  &mt LEFT_SHIFT SPACE  &mo 8  &mt RIGHT_CONTROL ENTER  &kp BACKSPACE                                  &kp SLASH
             >;
         };
 
