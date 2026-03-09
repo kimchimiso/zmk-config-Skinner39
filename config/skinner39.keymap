@@ -56,7 +56,7 @@
         symbol {
             bindings = <
   &none            &kp SINGLE_QUOTE   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE                  &kp TILDE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS  &kp EQUAL
-  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH          &none              &kp PIPE                   &kp AMPERSAND  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &none     &kp COLON
+  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH          &none              &kp PIPE                   &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none     &kp COLON
   &none            &none              &kp LESS_THAN     &kp GREATER_THAN   &none                      &kp AT         &kp UNDER             &trans                 &trans    &mt RIGHT_SHIFT QUESTION
   &trans           &trans             &trans            &trans             &trans     &trans  &trans  &trans                                                                &kp BACKSLASH
             >;
@@ -111,17 +111,17 @@
             bindings = <
   &kp DOUBLE_QUOTES  &kp PERCENT   &kp RIGHT_BRACKET  &kp BACKSLASH     &kp DOLLAR                  &none         &kp ASTRK  &kp LEFT_PARENTHESIS  &kp COLON  &kp UNDER
   &kp NUMBER_1       &kp NUMBER_2  &kp NUMBER_3       &kp NUMBER_4      &kp N5                      &kp NUMBER_6  &kp N7     &kp NUMBER_8          &kp N9     &kp N0
-  &none              &none         &kp LESS_THAN      &kp GREATER_THAN  &kp UNDER                   &none         &none      &trans                &trans     &trans
+  &none              &none         &kp LESS_THAN      &kp GREATER_THAN  &kp EQUAL                   &none         &none      &trans                &trans     &trans
   &trans             &trans        &trans             &trans            &trans      &trans  &trans  &trans                                                    &trans
             >;
         };
 
         symbol_win {
             bindings = <
-  &none            &kp AMPS  &kp RIGHT_BRACKET  &kp BACKSLASH     &kp LS(LEFT_BRACKET)                     &kp PLUS   &kp ASTERISK          &kp LEFT_PARENTHESIS  &kp COLON  &kp UNDER
-  &kp EXCLAMATION  &kp AT    &kp HASH           &none             &kp LS(INTERNATIONAL_3)                  &kp CARET  &kp LS(LEFT_BRACKET)  &kp PIPE              &none      &kp SINGLE_QUOTE
-  &none            &none     &kp LESS_THAN      &kp GREATER_THAN  &none                                    &none      &none                 &trans                &trans     &mt RIGHT_SHIFT QUESTION
-  &trans           &trans    &trans             &trans            &trans                   &trans  &trans  &trans                                                            &kp INTERNATIONAL_3
+  &none            &kp AMPS  &kp RIGHT_BRACKET  &kp BACKSLASH     &kp LS(LEFT_BRACKET)                     &kp PLUS          &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp COLON  &kp UNDER
+  &kp EXCLAMATION  &kp AT    &kp HASH           &none             &kp LS(INTERNATIONAL_3)                  &kp CARET         &kp LEFT_BRACE  &kp PIPE              &none      &kp SINGLE_QUOTE
+  &none            &none     &kp LESS_THAN      &kp GREATER_THAN  &none                                    &kp LEFT_BRACKET  &kp LS(MINUS)   &trans                &trans     &mt RIGHT_SHIFT QUESTION
+  &trans           &trans    &trans             &trans            &trans                   &trans  &trans  &trans                                                             &kp INTERNATIONAL_3
             >;
         };
 
