@@ -136,10 +136,10 @@
 
         cursor_win {
             bindings = <
-  &kp ESCAPE      &kp GRAVE  &none   &kp UP_ARROW    &kp HOME                  &mkp MB4         &msc MOVE_Y(15)   &none  &kp GRAVE  &none
-  &kp TAB         &kp LEFT   &none   &kp RIGHT       &kp END                   &mkp MB5         &mkp LCLK         &none  &mkp RCLK  &mkp MCLK
-  &kp LEFT_SHIFT  &none      &none   &kp DOWN_ARROW  &none                     &msc MOVE_X(15)  &msc MOVE_Y(-15)  &none  &none      &msc MOVE_X(-15)
-  &trans          &trans     &trans  &trans          &trans    &trans  &trans  &trans                                               &none
+  &kp ESCAPE      &kp LANG2  &none   &kp UP_ARROW    &kp HOME                  &mkp MB4         &msc MOVE_Y(15)   &none  &kp LANGUAGE_1  &none
+  &kp TAB         &kp LEFT   &none   &kp RIGHT       &kp END                   &mkp MB5         &mkp LCLK         &none  &mkp RCLK       &mkp MCLK
+  &kp LEFT_SHIFT  &none      &none   &kp DOWN_ARROW  &none                     &msc MOVE_X(15)  &msc MOVE_Y(-15)  &none  &none           &msc MOVE_X(-15)
+  &trans          &trans     &trans  &trans          &trans    &trans  &trans  &trans                                                    &none
             >;
         };
 
