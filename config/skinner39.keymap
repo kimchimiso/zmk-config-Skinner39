@@ -118,10 +118,10 @@
 
         symbol_win {
             bindings = <
-  &none            &kp AMPS  &kp RIGHT_BRACKET  &kp BACKSLASH     &kp LS(LEFT_BRACKET)                     &kp PLUS          &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp COLON  &kp UNDER
-  &kp EXCLAMATION  &kp AT    &kp HASH           &none             &kp LS(INTERNATIONAL_3)                  &kp CARET         &kp LEFT_BRACE  &kp PIPE              &none      &kp SINGLE_QUOTE
-  &none            &none     &kp LESS_THAN      &kp GREATER_THAN  &none                                    &kp LEFT_BRACKET  &kp LS(MINUS)   &trans                &trans     &mt RIGHT_SHIFT QUESTION
-  &trans           &trans    &trans             &trans            &trans                   &trans  &trans  &trans                                                             &kp INTERNATIONAL_3
+  &none            &kp AMPS  &kp RIGHT_BRACKET  &kp BACKSLASH     &kp LS(LEFT_BRACKET)                     &kp PLUS          &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp COLON  &kp UNDER
+  &kp EXCLAMATION  &kp AT    &kp HASH           &none             &kp LS(INTERNATIONAL_3)                  &kp CARET         &kp RIGHT_BRACE  &kp PIPE              &none      &kp SINGLE_QUOTE
+  &none            &none     &kp LESS_THAN      &kp GREATER_THAN  &none                                    &kp LEFT_BRACKET  &kp LS(INT_RO)   &trans                &trans     &mt RIGHT_SHIFT QUESTION
+  &trans           &trans    &trans             &trans            &trans                   &trans  &trans  &trans                                                              &kp INTERNATIONAL_3
             >;
         };
 
