@@ -30,6 +30,57 @@
             bindings = <&macro_param_1to2 &bt BT_SEL MACRO_PLACEHOLDER &macro_param_2to1 &to MACRO_PLACEHOLDER>;
             label = "BLUETOOTH_PROFILE";
         };
+
+        go_target: go_target {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings =
+                <&macro_param_1to2 &bt BT_SEL MACRO_PLACEHOLDER>,
+                <&macro_wait_time 200>,
+                <&macro_param_2to1 &to MACRO_PLACEHOLDER>;
+
+            label = "GO_TARGET";
+        };
+
+        bd_disp1: bd_disp1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F13>;
+            label = "Better Display 1";
+        };
+
+        bd_disp2: bd_disp2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F14>;
+            label = "BD_DISP2";
+        };
+
+        via_disp1: via_disp1 {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings =
+                <&bt BT_SEL 2>,
+                <&macro_wait_time 150>,
+                <&bd_disp1>,
+                <&macro_wait_time 150>,
+                <&macro_param_1to1 &macro_param_2to2 &go_target MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
+
+            label = "VIA_DISP1";
+        };
+
+        via_disp2: via_disp2 {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings =
+                <&bt BT_SEL 2>,
+                <&macro_wait_time 150>,
+                <&bd_disp2>,
+                <&macro_wait_time 150>,
+                <&macro_param_1to1 &macro_param_2to2 &go_target MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
+
+            label = "VIA_DISP2";
+        };
     };
 
     keymap {
@@ -91,10 +142,10 @@
 
         profile {
             bindings = <
-  &none     &none     &none     &none     &none                     &none   &none  &none  &none  &none
-  &btl 0 0  &btl 1 0  &btl 2 0  &btl 3 7  &btl 4 0                  &none   &none  &none  &none  &none
-  &none     &none     &none     &none     &none                     &none   &none  &none  &none  &none
-  &trans    &trans    &trans    &trans    &trans    &trans  &trans  &trans                       &trans
+  &none     &none     &none           &none           &none                     &none   &none  &none  &none  &none
+  &btl 0 0  &btl 1 0  &via_disp1 2 0  &via_disp2 3 7  &btl 4 0                  &none   &none  &none  &none  &none
+  &none     &none     &none           &none           &none                     &none   &none  &none  &none  &none
+  &trans    &trans    &trans          &trans          &trans    &trans  &trans  &trans                       &trans
             >;
         };
 
