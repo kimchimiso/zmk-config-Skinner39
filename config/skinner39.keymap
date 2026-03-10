@@ -36,7 +36,7 @@
             #binding-cells = <2>;
             bindings =
                 <&macro_param_1to2 &bt BT_SEL MACRO_PLACEHOLDER>,
-                <&macro_wait_time 200>,
+                <&macro_wait_time 0>,
                 <&macro_param_2to1 &to MACRO_PLACEHOLDER>;
 
             label = "GO_TARGET";
@@ -61,9 +61,9 @@
             #binding-cells = <2>;
             bindings =
                 <&bt BT_SEL 2>,
-                <&macro_wait_time 150>,
+                <&macro_wait_time 0>,
                 <&bd_disp1>,
-                <&macro_wait_time 150>,
+                <&macro_wait_time 0>,
                 <&macro_param_1to1 &macro_param_2to2 &go_target MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
 
             label = "VIA_DISP1";
@@ -74,9 +74,9 @@
             #binding-cells = <2>;
             bindings =
                 <&bt BT_SEL 2>,
-                <&macro_wait_time 150>,
+                <&macro_wait_time 0>,
                 <&bd_disp2>,
-                <&macro_wait_time 150>,
+                <&macro_wait_time 0>,
                 <&macro_param_1to1 &macro_param_2to2 &go_target MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
 
             label = "VIA_DISP2";
