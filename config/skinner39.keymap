@@ -205,10 +205,10 @@
 
         profile_win {
             bindings = <
-  &none     &none     &none     &none     &none                     &none   &none  &none  &none  &none
-  &btl 0 0  &btl 1 0  &btl 2 0  &btl 3 7  &btl 4 0                  &none   &none  &none  &none  &none
-  &none     &none     &none     &none     &none                     &none   &none  &none  &none  &none
-  &trans    &trans    &trans    &trans    &trans    &trans  &trans  &trans                       &trans
+  &none     &none     &none           &none           &none                     &none   &none  &none  &none  &none
+  &btl 0 0  &btl 1 0  &via_disp1 2 0  &via_disp2 3 7  &btl 4 0                  &none   &none  &none  &none  &none
+  &none     &none     &none           &none           &none                     &none   &none  &none  &none  &none
+  &trans    &trans    &trans          &trans          &trans    &trans  &trans  &trans                       &trans
             >;
         };
     };
