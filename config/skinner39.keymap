@@ -152,7 +152,7 @@
         display {
             bindings = <
   &none   &none   &none           &none           &none                   &none   &none  &none  &none  &none
-  &none   &none   &via_disp1 2 0  &via_disp2 3 7  &none                   &none   &none  &none  &none  &none
+  &none   &none   &via_disp1 2 0  &via_disp2 3 8  &none                   &none   &none  &none  &none  &none
   &none   &none   &none           &none           &none                   &none   &none  &none  &none  &none
   &trans  &trans  &trans          &trans          &trans  &trans  &trans  &trans                       &trans
             >;
@@ -224,7 +224,7 @@
         display_win {
             bindings = <
   &none   &none   &none           &none           &none                   &none   &none  &none  &none  &none
-  &none   &none   &via_disp1 2 0  &via_disp2 3 7  &none                   &none   &none  &none  &none  &none
+  &none   &none   &via_disp1 2 0  &via_disp2 3 8  &none                   &none   &none  &none  &none  &none
   &none   &none   &none           &none           &none                   &none   &none  &none  &none  &none
   &trans  &trans  &trans          &trans          &trans  &trans  &trans  &trans                       &trans
             >;
