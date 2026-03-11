@@ -45,14 +45,14 @@
         bd_disp1: bd_disp1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F13>;
+            bindings = <&kp F12>;
             label = "Better Display 1";
         };
 
         bd_disp2: bd_disp2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F14>;
+            bindings = <&kp F13>;
             label = "BD_DISP2";
         };
 
@@ -142,27 +142,27 @@
 
         profile {
             bindings = <
-  &none   &none   &none     &none     &none                   &none   &none  &none  &none  &none
-  &none   &none   &btl 2 0  &btl 3 8  &none                   &none   &none  &none  &none  &none
-  &none   &none   &none     &none     &none                   &none   &none  &none  &none  &none
-  &trans  &trans  &trans    &trans    &trans  &trans  &trans  &trans                       &trans
+  &none   &none     &none     &none   &none                   &none   &none  &none  &none  &none
+  &none   &btl 1 8  &btl 2 0  &none   &none                   &none   &none  &none  &none  &none
+  &none   &none     &none     &none   &none                   &none   &none  &none  &none  &none
+  &trans  &trans    &trans    &trans  &trans  &trans  &trans  &trans                       &trans
             >;
         };
 
         display {
             bindings = <
-  &none   &none   &none           &none           &none                   &none   &none  &none  &none  &none
-  &none   &none   &via_disp1 2 0  &via_disp2 3 8  &none                   &none   &none  &none  &none  &none
-  &none   &none   &none           &none           &none                   &none   &none  &none  &none  &none
-  &trans  &trans  &trans          &trans          &trans  &trans  &trans  &trans                       &trans
+  &none   &none           &none           &none   &none                   &none   &none  &none  &none  &none
+  &none   &via_disp1 3 8  &via_disp2 2 0  &none   &none                   &none   &none  &none  &none  &none
+  &none   &none           &none           &none   &none                   &none   &none  &none  &none  &none
+  &trans  &trans          &trans          &trans  &trans  &trans  &trans  &trans                       &trans
             >;
         };
 
         default_layer_win {
             bindings = <
-  &kp Q             &kp W         &lt 12 E   &kp R   &kp T                                                 &kp Y          &kp U     &lt 12 I   &lt 15 O    &lt 14 P
+  &kp Q             &kp W         &lt 12 E   &kp R   &kp T                                                 &kp Y          &kp U     &lt 12 I   &lt 7 O     &lt 6 P
   &kp A             &kp S         &kp D      &kp F   &kp G                                                 &kp H          &kp J     &kp K      &kp L       &kp SEMICOLON
-  &kp Z             &kp X         &kp C      &kp V   &kp B                                                 &lt 13 N       &lt 11 M  &kp COMMA  &kp PERIOD  &kp MINUS
+  &kp Z             &kp X         &kp C      &kp V   &kp B                                                 &lt 5 N        &lt 11 M  &kp COMMA  &kp PERIOD  &kp MINUS
   &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LCTRL  &mo 10  &mt LEFT_SHIFT SPACE  &mo 9  &mt RIGHT_CONTROL ENTER  &kp BACKSPACE                                   &kp SLASH
             >;
         };
@@ -200,33 +200,6 @@
   &kp TAB         &kp LEFT   &none   &kp RIGHT       &kp END                   &mkp MB5         &mkp LCLK         &none  &mkp RCLK       &mkp MCLK
   &kp LEFT_SHIFT  &none      &none   &kp DOWN_ARROW  &none                     &msc MOVE_X(15)  &msc MOVE_Y(-15)  &none  &none           &msc MOVE_X(-15)
   &trans          &trans     &trans  &trans          &trans    &trans  &trans  &trans                                                    &none
-            >;
-        };
-
-        player_win {
-            bindings = <
-  &kp K_MUTE  &trans  &trans  &kp C_VOLUME_UP    &trans                  &trans  &trans  &trans  &trans  &trans
-  &trans      &trans  &trans  &trans             &trans                  &trans  &trans  &trans  &trans  &trans
-  &trans      &trans  &trans  &kp C_VOLUME_DOWN  &trans                  &trans  &trans  &trans  &trans  &trans
-  &trans      &trans  &trans  &trans             &trans  &trans  &trans  &trans                          &trans
-            >;
-        };
-
-        profile_win {
-            bindings = <
-  &none   &none   &none     &none     &none                   &none   &none  &none  &none  &none
-  &none   &none   &btl 2 0  &btl 3 8  &none                   &none   &none  &none  &none  &none
-  &none   &none   &none     &none     &none                   &none   &none  &none  &none  &none
-  &trans  &trans  &trans    &trans    &trans  &trans  &trans  &trans                       &trans
-            >;
-        };
-
-        display_win {
-            bindings = <
-  &none   &none   &none           &none           &none                   &none   &none  &none  &none  &none
-  &none   &none   &via_disp1 2 0  &via_disp2 3 8  &none                   &none   &none  &none  &none  &none
-  &none   &none   &none           &none           &none                   &none   &none  &none  &none  &none
-  &trans  &trans  &trans          &trans          &trans  &trans  &trans  &trans                       &trans
             >;
         };
     };
