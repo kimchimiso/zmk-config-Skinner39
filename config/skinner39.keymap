@@ -7,11 +7,6 @@
     combos {
         compatible = "zmk,combos";
 
-        function {
-            bindings = <&mo 3>;
-            key-positions = <37 34>;
-        };
-
         bt_clr_L {
             bindings = <&bt BT_CLR>;
             key-positions = <0 4>;
@@ -88,9 +83,9 @@
 
         default_layer {
             bindings = <
-  &kp Q             &kp W         &lt 4 E    &kp R    &kp T                                                 &kp Y          &kp U    &lt 4 I    &lt 12 O    &lt 11 P
+  &kp Q             &kp W         &lt 4 E    &kp R    &kp T                                                 &kp Y          &kp U    &lt 4 I    &lt 13 O    &lt 12 P
   &kp A             &kp S         &kp D      &kp F    &kp G                                                 &kp H          &kp J    &kp K      &kp L       &kp SEMICOLON
-  &kp Z             &kp X         &kp C      &lt 3 V  &kp B                                                 &lt 10 N       &lt 3 M  &kp COMMA  &kp PERIOD  &kp MINUS
+  &kp Z             &kp X         &kp C      &lt 3 V  &kp B                                                 &lt 11 N       &lt 3 M  &kp COMMA  &kp PERIOD  &kp MINUS
   &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LCTRL  &mo 2    &mt LEFT_SHIFT SPACE  &mo 1  &mt RIGHT_COMMAND ENTER  &kp BACKSPACE                                  &kp SLASH
             >;
         };
@@ -131,12 +126,21 @@
             >;
         };
 
+        empty {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
+            >;
+        };
+
         default_layer_win {
             bindings = <
-  &kp Q             &kp W         &lt 9 E    &kp R    &kp T                                                 &kp Y          &kp U    &lt 9 I    &lt 12 O    &lt 11 P
+  &kp Q             &kp W         &lt 10 E   &kp R    &kp T                                                 &kp Y          &kp U    &lt 10 I   &lt 13 O    &lt 12 P
   &kp A             &kp S         &kp D      &kp F    &kp G                                                 &kp H          &kp J    &kp K      &kp L       &kp SEMICOLON
-  &kp Z             &kp X         &kp C      &lt 8 V  &kp B                                                 &lt 10 N       &lt 8 M  &kp COMMA  &kp PERIOD  &kp MINUS
-  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LCTRL  &mo 7    &mt LEFT_SHIFT SPACE  &mo 6  &mt RIGHT_CONTROL ENTER  &kp BACKSPACE                                  &kp SLASH
+  &kp Z             &kp X         &kp C      &lt 9 V  &kp B                                                 &lt 11 N       &lt 9 M  &kp COMMA  &kp PERIOD  &kp MINUS
+  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LCTRL  &mo 8    &mt LEFT_SHIFT SPACE  &mo 7  &mt RIGHT_CONTROL ENTER  &kp BACKSPACE                                  &kp SLASH
             >;
         };
 
@@ -188,7 +192,7 @@
         profile {
             bindings = <
   &none     &none     &none     &none     &none                     &none   &none  &none  &none  &none
-  &btl 0 0  &btl 1 5  &btl 2 0  &btl 3 0  &btl 4 0                  &none   &none  &none  &none  &none
+  &btl 0 0  &btl 1 6  &btl 2 0  &btl 3 0  &btl 4 0                  &none   &none  &none  &none  &none
   &none     &none     &none     &none     &none                     &none   &none  &none  &none  &none
   &trans    &trans    &trans    &trans    &trans    &trans  &trans  &trans                       &trans
             >;
@@ -197,7 +201,7 @@
         display {
             bindings = <
   &none   &none           &none           &none   &none                   &none   &none  &none  &none  &none
-  &none   &via_disp2 3 5  &via_disp1 2 0  &none   &none                   &none   &none  &none  &none  &none
+  &none   &via_disp2 1 6  &via_disp1 2 0  &none   &none                   &none   &none  &none  &none  &none
   &none   &none           &none           &none   &none                   &none   &none  &none  &none  &none
   &trans  &trans          &trans          &trans  &trans  &trans  &trans  &trans                       &trans
             >;
