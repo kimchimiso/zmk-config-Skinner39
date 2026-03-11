@@ -45,14 +45,14 @@
         bd_disp1: bd_disp1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F12>;
+            bindings = <&kp F13>;
             label = "Better Display 1";
         };
 
         bd_disp2: bd_disp2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F13>;
+            bindings = <&kp F12>;
             label = "BD_DISP2";
         };
 
@@ -187,17 +187,17 @@
 
         profile {
             bindings = <
-  &none   &none     &none     &none   &none                   &none   &none  &none  &none  &none
-  &none   &btl 1 5  &btl 2 0  &none   &none                   &none   &none  &none  &none  &none
-  &none   &none     &none     &none   &none                   &none   &none  &none  &none  &none
-  &trans  &trans    &trans    &trans  &trans  &trans  &trans  &trans                       &trans
+  &none     &none     &none     &none     &none                     &none   &none  &none  &none  &none
+  &btl 0 0  &btl 1 5  &btl 2 0  &btl 3 0  &btl 4 0                  &none   &none  &none  &none  &none
+  &none     &none     &none     &none     &none                     &none   &none  &none  &none  &none
+  &trans    &trans    &trans    &trans    &trans    &trans  &trans  &trans                       &trans
             >;
         };
 
         display {
             bindings = <
   &none   &none           &none           &none   &none                   &none   &none  &none  &none  &none
-  &none   &via_disp1 3 8  &via_disp2 2 0  &none   &none                   &none   &none  &none  &none  &none
+  &none   &via_disp2 3 5  &via_disp1 2 0  &none   &none                   &none   &none  &none  &none  &none
   &none   &none           &none           &none   &none                   &none   &none  &none  &none  &none
   &trans  &trans          &trans          &trans  &trans  &trans  &trans  &trans                       &trans
             >;
