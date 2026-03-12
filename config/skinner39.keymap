@@ -40,14 +40,14 @@
         bd_disp1: bd_disp1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F13>;
+            bindings = <&kp LA(LG(F13))>;
             label = "Better Display 1";
         };
 
         bd_disp2: bd_disp2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F12>;
+            bindings = <&kp LA(LG(F14))>;
             label = "BD_DISP2";
         };
 
