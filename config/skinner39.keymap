@@ -201,7 +201,7 @@
         profile {
             bindings = <
   &none     &none     &none     &none     &none                     &none   &none  &none  &none  &none
-  &btl 0 0  &btl 1 7  &btl 2 0  &btl 3 0  &btl 4 0                  &none   &none  &none  &none  &none
+  &btl 2 7  &btl 1 7  &btl 2 0  &btl 3 0  &btl 4 0                  &none   &none  &none  &none  &none
   &none     &none     &none     &none     &none                     &none   &none  &none  &none  &none
   &trans    &trans    &trans    &trans    &trans    &trans  &trans  &trans                       &trans
             >;
