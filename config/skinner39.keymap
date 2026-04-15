@@ -83,9 +83,9 @@
 
         default_layer {
             bindings = <
-  &kp Q             &kp W         &lt 4 E    &kp R    &kp T                                                 &kp Y          &kp U    &lt 4 I    &lt 14 O    &lt 13 P
-  &kp A             &kp S         &kp D      &kp F    &kp G                                                 &kp H          &kp J    &kp K      &kp L       &kp SEMICOLON
-  &kp Z             &kp X         &kp C      &lt 3 V  &kp B                                                 &lt 12 N       &lt 3 M  &kp COMMA  &kp PERIOD  &kp MINUS
+  &kp Q             &kp W         &lt 4 E    &kp R    &kp T                                                 &kp Y          &kp U    &lt 4 I    &lt 16 O    &lt 15 P
+  &kp A             &kp S         &kp D      &kp F    &kp G                                                 &kp H          &kp J    &kp K      &kp L       &lt 5 SEMICOLON
+  &kp Z             &kp X         &kp C      &lt 3 V  &kp B                                                 &lt 14 N       &lt 3 M  &kp COMMA  &kp PERIOD  &kp MINUS
   &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LCTRL  &mo 2    &mt LEFT_SHIFT SPACE  &mo 1  &mt RIGHT_COMMAND ENTER  &kp BACKSPACE                                  &kp SLASH
             >;
         };
@@ -110,10 +110,10 @@
 
         function {
             bindings = <
-  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                   &kp F6   &kp F7   &kp F8   &kp F9   &kp F10
-  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                  &kp F16  &kp F17  &kp F18  &kp F19  &kp F20
-  &none    &none    &none    &none    &none                    &none    &none    &none    &none    &none
-  &trans   &trans   &trans   &trans   &trans   &trans  &trans  &trans                              &none
+  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                   &kp F6      &kp F7   &kp F8   &kp F9   &kp F10
+  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                  &kp F16     &kp F17  &kp F18  &kp F19  &kp F20
+  &none    &none    &none    &none    &none                    &none       &none    &none    &none    &none
+  &trans   &trans   &trans   &trans   &trans   &trans  &trans  &kp DELETE                             &none
             >;
         };
 
@@ -123,6 +123,15 @@
   &kp TAB         &kp LEFT        &none   &kp RIGHT       &kp END                   &mkp MB5         &mkp LCLK         &none  &mkp RCLK       &mkp MCLK
   &kp LEFT_SHIFT  &none           &none   &kp DOWN_ARROW  &none                     &msc MOVE_X(15)  &msc MOVE_Y(15)   &none  &none           &msc MOVE_X(-15)
   &trans          &trans          &trans  &trans          &trans    &trans  &trans  &trans                                                    &none
+            >;
+        };
+
+        desktop_mac {
+            bindings = <
+  &none   &none         &none   &kp LC(UP_ARROW)  &none                   &none   &none  &none  &none  &none
+  &none   &kp LC(LEFT)  &none   &kp LC(RIGHT)     &none                   &none   &none  &none  &none  &none
+  &none   &none         &none   &none             &none                   &none   &none  &none  &none  &none
+  &trans  &trans        &trans  &trans            &trans  &trans  &trans  &trans                       &trans
             >;
         };
 
@@ -146,10 +155,10 @@
 
         default_layer_win {
             bindings = <
-  &kp Q             &kp W         &lt 11 E   &kp R     &kp T                                                 &kp Y          &kp U     &lt 11 I   &lt 14 O    &lt 13 P
-  &kp A             &kp S         &kp D      &kp F     &kp G                                                 &kp H          &kp J     &kp K      &kp L       &kp SEMICOLON
-  &kp Z             &kp X         &kp C      &lt 10 V  &kp B                                                 &lt 12 N       &lt 10 M  &kp COMMA  &kp PERIOD  &kp MINUS
-  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LCTRL  &mo 9     &mt LEFT_SHIFT SPACE  &mo 8  &mt RIGHT_CONTROL ENTER  &kp BACKSPACE                                   &kp SLASH
+  &kp Q             &kp W         &lt 12 E          &kp R     &kp T                                                 &kp Y          &kp U     &lt 12 I   &lt 16 O    &lt 15 P
+  &kp A             &kp S         &kp D             &kp F     &kp G                                                 &kp H          &kp J     &kp K      &kp L       &lt 13 SEMICOLON
+  &kp Z             &kp X         &kp C             &lt 11 V  &kp B                                                 &lt 14 N       &lt 11 M  &kp COMMA  &kp PERIOD  &kp MINUS
+  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &mo 10    &mt LEFT_SHIFT SPACE  &mo 9  &mt RIGHT_CONTROL ENTER  &kp BACKSPACE                                   &kp SLASH
             >;
         };
 
@@ -173,10 +182,10 @@
 
         function_win {
             bindings = <
-  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                   &kp F6   &kp F7   &kp F8   &kp F9             &kp F10
-  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                  &kp F16  &kp F17  &kp F18  &kp RIGHT_COMMAND  &kp F20
-  &kp F21  &kp F22  &kp F23  &kp F24  &none                    &none    &none    &none    &none              &none
-  &trans   &trans   &trans   &trans   &trans   &trans  &trans  &trans                                        &none
+  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                   &kp F6      &kp F7   &kp F8   &kp F9             &kp F10
+  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                  &kp F16     &kp F17  &kp F18  &kp RIGHT_COMMAND  &kp F20
+  &kp F21  &kp F22  &kp F23  &kp F24  &none                    &none       &none    &none    &none              &none
+  &trans   &trans   &trans   &trans   &trans   &trans  &trans  &kp DELETE                                       &none
             >;
         };
 
@@ -186,6 +195,15 @@
   &kp TAB         &kp LEFT   &none   &kp RIGHT       &kp END                   &mkp MB5         &mkp LCLK         &none  &mkp RCLK       &mkp MCLK
   &kp LEFT_SHIFT  &none      &none   &kp DOWN_ARROW  &none                     &msc MOVE_X(15)  &msc MOVE_Y(-15)  &none  &none           &msc MOVE_X(-15)
   &trans          &trans     &trans  &trans          &trans    &trans  &trans  &trans                                                    &none
+            >;
+        };
+
+        desktop_win {
+            bindings = <
+  &none   &none             &none   &kp LG(TAB)        &none                   &none   &none  &none  &none  &none
+  &none   &kp LG(LC(LEFT))  &none   &kp LC(LG(RIGHT))  &none                   &none   &none  &none  &none  &none
+  &none   &none             &none   &none              &none                   &none   &none  &none  &none  &none
+  &trans  &trans            &trans  &trans             &trans  &trans  &trans  &trans                       &trans
             >;
         };
 
@@ -201,7 +219,7 @@
         profile {
             bindings = <
   &none     &none     &none     &none     &none                     &none   &none  &none  &none  &none
-  &btl 2 7  &btl 1 7  &btl 2 0  &btl 3 0  &btl 4 0                  &none   &none  &none  &none  &none
+  &btl 2 8  &btl 1 8  &btl 2 0  &btl 3 0  &btl 4 0                  &none   &none  &none  &none  &none
   &none     &none     &none     &none     &none                     &none   &none  &none  &none  &none
   &trans    &trans    &trans    &trans    &trans    &trans  &trans  &trans                       &trans
             >;
